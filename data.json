@@ -64,25 +64,14 @@
     "direct": {
       "title": "contacts",
       "sources": {
-        "email": "user@gmail.com",
-        "phone": "+3598246359"
+        "email": "email@approximations.software"
       }
     },
     "social": {
       "github": {
         "title": "Github profile",
-        "url": "https://github.com/",
-        "user": "username"
-      },
-      "facebook": {
-        "title": "Facebook profile",
-        "url": "https://facebook.com/",
-        "user": "username"
-      },
-      "twitter": {
-        "title": "Twitter account",
-        "url": "https://twitter.com/",
-        "user": "username"
+        "url": "https://github.com/guikaua12",
+        "user": "guikaua12"
       }
     },
     "find_me_also_in": {
@@ -90,23 +79,18 @@
       "sources": {
         "youtube": {
           "title": "YouTube channel",
-          "url": "https://www.youtube.com/",
-          "user": "username"
-        },
-        "gurushots": {
-          "title": "GuruShots profile",
-          "url": "https://gurushots.com/",
-          "user": "username"
+          "url": "https://www.youtube.com/channel/UCCoUKF5vW1XPMDUYBbY6Bbg",
+          "user": "Approximations"
         },
         "instagram": {
           "title": "Instagram account",
-          "url": "https://instagram.com/",
-          "user": "username"
+          "url": "https://www.instagram.com/g._.kaua/",
+          "user": "g._.kaua"
         },
         "twitch": {
           "title": "Twitch profile",
-          "url": "https://twitch.com/",
-          "user": "username"
+          "url": "https://www.twitch.tv/approximations0",
+          "user": "approximations0"
         }
       }
     }
