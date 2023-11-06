@@ -1,4 +1,4 @@
-import fs from 'fs';
+import file from '@/../data.json';
 
 export type AboutSectionInfo = {
     title: string;
@@ -57,5 +57,5 @@ export type Data = {
     };
 };
 
-const file = fs.readFileSync(process.cwd() + '/data.json', 'utf8');
-export const data: Data = JSON.parse(file);
+// @ts-ignore TS2322
+export const data: Data = file;
