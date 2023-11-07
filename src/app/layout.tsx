@@ -5,6 +5,7 @@ import Header from '@/feature/Header';
 import React from 'react';
 import { HeaderMenuProvider } from '@/feature/Header/Menu/context/HeaderMenuContext';
 import WithHeaderMenu from '@/feature/Header/Menu/WithHeaderMenu';
+import Footer from '@/feature/Footer';
 
 const fira_code = Fira_Code({ subsets: ['latin'] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <WithHeaderMenu>
                             <main>{children}</main>
                         </WithHeaderMenu>
+                        <Footer />
                     </div>
                 </body>
             </HeaderMenuProvider>
