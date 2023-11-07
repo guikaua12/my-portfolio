@@ -15,7 +15,7 @@ export default function Home() {
             {/*role*/}
             <h3 className="mt-1 text-xl text-accent-turquoise">{`> ${data.role}`}</h3>
 
-            <div className="mt-48">
+            <div className="mt-80">
                 <span className="text-blue-4">// find my profile on GitHub:</span>
 
                 <SyntaxHighlighter
