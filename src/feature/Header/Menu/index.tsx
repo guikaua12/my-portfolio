@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const HeaderMenu = () => {
     return (
-        <nav className="space-re h-full bg-blue-2">
+        <nav className="bg-blue-2">
             <ul className="flex flex-col text-white">
                 <li>
                     <Link href="#" className="inline-block w-full border-b border-b-blue-3 p-4">
