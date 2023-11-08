@@ -81,16 +81,19 @@
           "title": "YouTube channel",
           "url": "https://www.youtube.com/channel/UCCoUKF5vW1XPMDUYBbY6Bbg",
           "user": "Approximations"
+          "icon": "FaYoutube"
         },
         "instagram": {
           "title": "Instagram account",
           "url": "https://www.instagram.com/g._.kaua/",
           "user": "g._.kaua"
+          "icon": "FaInstagram"
         },
         "twitch": {
           "title": "Twitch profile",
           "url": "https://www.twitch.tv/approximations0",
           "user": "approximations0"
+          "icon": "FaTwitch"
         }
       }
     }
