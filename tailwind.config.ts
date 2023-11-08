@@ -16,6 +16,15 @@ const config: Config = {
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             },
+            keyframes: {
+                'ping-invert': {
+                    '0%': { transform: 'scale(2)', opacity: '0' },
+                    '75%, 100%': { transform: 'scale(1)', opacity: '1' },
+                },
+            },
+            animation: {
+                'ping-one-time': 'ping-invert 1s cubic-bezier(0, 0, 0.2, 1);',
+            },
         },
     },
     plugins: [],
