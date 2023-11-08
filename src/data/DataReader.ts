@@ -1,9 +1,15 @@
 import file from '@/../data.json';
 import * as icons from 'react-icons/fa6';
 
+export type AboutSectionInfoFile = {
+    name: string;
+    description: string;
+};
+
 export type AboutSectionInfo = {
     title: string;
     description: string;
+    files?: AboutSectionInfoFile[];
 };
 
 export type AboutSection = {
