@@ -2,6 +2,7 @@
 import React, { ComponentProps, useState } from 'react';
 import { AboutSection } from '@/data/DataReader';
 import { FaCaretRight, FaCaretDown } from 'react-icons/fa6';
+import AboutMeSectionInfo from '@/feature/AboutMe/Section/Info';
 
 interface Props extends ComponentProps<'div'> {
     section: AboutSection;
@@ -15,13 +16,16 @@ const AboutMeSection = ({ section, ...rest }: Props) => {
     };
 
     return (
-        <div
-            className="flex w-full cursor-pointer select-none gap-3 bg-blue-3 py-1 text-white"
-            onClick={toggleOpenState}
-            {...rest}
-        >
-            <button className="pl-7">{isOpened ? <FaCaretDown /> : <FaCaretRight />}</button>
-            <h2>{section.title}</h2>
+        <div>
+            <div
+                className="flex w-full cursor-pointer select-none gap-3 bg-blue-3 px-7 py-1 text-white"
+                onClick={toggleOpenState}
+                {...rest}
+            >
+                <button className="">{isOpened ? <FaCaretDown /> : <FaCaretRight />}</button>
+                <h2>{section.title}</h2>
+            </div>
+            {!!(isOpened && section.info) && section.info.map((info) => <AboutMeSectionInfo info={info} />)}
         </div>
     );
 };
