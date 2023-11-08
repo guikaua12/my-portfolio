@@ -76,26 +76,29 @@
     },
     "find_me_also_in": {
       "title": "find-me-also-in",
-      "sources": {
-        "youtube": {
+      "sources": [
+        {
+          "name": "youtube",
           "title": "YouTube channel",
           "url": "https://www.youtube.com/channel/UCCoUKF5vW1XPMDUYBbY6Bbg",
-          "user": "Approximations"
+          "user": "Approximations",
           "icon": "FaYoutube"
         },
-        "instagram": {
+        {
+          "name": "instagram",
           "title": "Instagram account",
           "url": "https://www.instagram.com/g._.kaua/",
-          "user": "g._.kaua"
+          "user": "g._.kaua",
           "icon": "FaInstagram"
         },
-        "twitch": {
+        {
+          "name": "twitch",
           "title": "Twitch profile",
           "url": "https://www.twitch.tv/approximations0",
-          "user": "approximations0"
+          "user": "approximations0",
           "icon": "FaTwitch"
         }
-      }
+      ]
     }
   },
   "gists": {

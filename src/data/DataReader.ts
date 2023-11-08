@@ -12,6 +12,13 @@ export type AboutSection = {
     info: AboutSectionInfo[];
 };
 
+export type FindMeAlsoInSource = {
+    title: string;
+    url: string;
+    user: string;
+    icon: keyof typeof icons;
+};
+
 export type Data = {
     name: string;
     logo_name: string;
@@ -37,23 +44,7 @@ export type Data = {
         };
         find_me_also_in: {
             title: string;
-            sources: {
-                youtube: {
-                    title: string;
-                    url: string;
-                    user: string;
-                };
-                instagram: {
-                    title: string;
-                    url: string;
-                    user: string;
-                };
-                twitch: {
-                    title: string;
-                    url: string;
-                    user: string;
-                };
-            };
+            sources: FindMeAlsoInSource[];
         };
     };
 };
