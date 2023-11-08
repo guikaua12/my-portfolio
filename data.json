@@ -3,8 +3,8 @@
   "logo_name": "guilherme-kaua",
   "role": "Fullstack developer",
   "about": {
-    "sections": {
-      "professional-info": {
+    "sections": [
+      {
         "title": "professional-info",
         "icon": "icons/info-professional.svg",
         "info": {
@@ -22,7 +22,7 @@
           }
         }
       },
-      "personal-info": {
+      {
         "title": "personal-info",
         "icon": "icons/info-personal.svg",
         "info": {
@@ -44,7 +44,7 @@
           }
         }
       },
-      "hobbies-info": {
+      {
         "title": "hobbies-info",
         "icon": "icons/info-hobbies.svg",
         "info": {
@@ -58,7 +58,7 @@
           }
         }
       }
-    }
+    ]
   },
   "contacts": {
     "direct": {
