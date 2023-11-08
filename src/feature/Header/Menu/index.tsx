@@ -14,7 +14,7 @@ const HeaderMenu = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="#" className="inline-block w-full border-b border-b-blue-3 p-4">
+                    <Link href="/about-me" className="inline-block w-full border-b border-b-blue-3 p-4">
                         _about-me
                     </Link>
                 </li>
