@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <HeaderMenuProvider>
                 <body className={`${fira_code.className} h-screen w-full bg-blue-1 p-4 text-blue-4`}>
-                    <div className="flex min-h-full flex-col overflow-auto rounded-lg border border-blue-3 bg-blue-2">
+                    <div className="flex min-h-full flex-col rounded-lg border border-blue-3 bg-blue-2">
                         <Header />
                         <WithHeaderMenu>
                             <main className="flex-1">{children}</main>
