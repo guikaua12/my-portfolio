@@ -9,7 +9,7 @@ export type AboutSectionInfoFile = {
 export type AboutSectionInfo = {
     title: string;
     description: string;
-    files?: AboutSectionInfoFile[];
+    files: AboutSectionInfoFile[];
 };
 
 export type AboutSection = {
