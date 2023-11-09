@@ -16,11 +16,7 @@ const AboutMeSectionInfo = ({ info, ...rest }: Props) => {
 
     return (
         <div className="cursor-pointer select-none">
-            <div
-                className="flex w-full items-center gap-3 px-8 py-1 font-medium text-blue-4"
-                onClick={toggleOpenState}
-                {...rest}
-            >
+            <div className="flex w-full items-center gap-3 px-8 py-1 text-blue-4" onClick={toggleOpenState} {...rest}>
                 {isOpened ? <FaChevronDown size={14} /> : <FaChevronRight size={14} />}
                 <FaFolderClosed size={16} />
                 {info.title}

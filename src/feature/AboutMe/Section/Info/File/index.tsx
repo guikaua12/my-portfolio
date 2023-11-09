@@ -8,7 +8,7 @@ interface Props extends ComponentProps<'div'> {
 
 const AboutMeSectionInfoFile = ({ file, ...rest }: Props) => {
     return (
-        <div className="flex w-full cursor-pointer items-center gap-3 py-1 pl-16 font-medium text-blue-4" {...rest}>
+        <div className="flex w-full cursor-pointer items-center gap-3 py-1 pl-16 text-blue-4" {...rest}>
             <MIcon />
             {file.name}
         </div>
