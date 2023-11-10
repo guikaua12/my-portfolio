@@ -17,7 +17,7 @@ const AboutMeSection = ({ section, ...rest }: Props) => {
 
     return (
         <section className="cursor-pointer select-none">
-            <div className="flex w-full gap-3 bg-blue-3 px-7 py-1 text-white" onClick={handleSectionClick} {...rest}>
+            <div className="flex w-full gap-3 bg-blue-3 px-7 py-1 text-white" onClick={toggleOpenState} {...rest}>
                 <button className="">{isOpened ? <FaCaretDown /> : <FaCaretRight />}</button>
                 <h2>{section.title}</h2>
             </div>
