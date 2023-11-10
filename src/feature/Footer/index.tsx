@@ -12,7 +12,7 @@ const Footer = () => {
 
             <div className="flex">
                 {findMeAlsoIn.sources.map((source) => (
-                    <div className="flex items-center justify-center border-l border-l-blue-3 px-4">
+                    <div key={source.title} className="flex items-center justify-center border-l border-l-blue-3 px-4">
                         <Link href={source.url}>
                             <Icon name={source.icon} size={28} opacity={0.4} />
                         </Link>

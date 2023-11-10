@@ -21,7 +21,8 @@ const AboutMeSectionInfo = ({ info, ...rest }: Props) => {
                 <FaFolderClosed size={16} />
                 {info.title}
             </div>
-            {!!(isOpened && info.files) && info.files.map((file) => <AboutMeSectionInfoFile file={file} />)}
+            {!!(isOpened && info.files) &&
+                info.files.map((file) => <AboutMeSectionInfoFile key={file.name} file={file} />)}
         </div>
     );
 };
