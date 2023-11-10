@@ -4,12 +4,14 @@ import * as icons from 'react-icons/fa6';
 export type AboutSectionInfoFile = {
     name: string;
     description: string;
+    parent: AboutSectionInfo;
 };
 
 export type AboutSectionInfo = {
     title: string;
     description: string;
     files: AboutSectionInfoFile[];
+    parent: AboutSection;
 };
 
 export type AboutSection = {
@@ -56,4 +58,15 @@ export type Data = {
 };
 
 // @ts-ignore TS2322
-export const data: Data = file;
+const data: Data = file;
+
+data.about.sections.forEach((section) => {
+    section.info.forEach((info) => {
+        info.files.forEach((file) => {
+            file.parent = info;
+        });
+        info.parent = section;
+    });
+});
+
+export { data };
