@@ -21,8 +21,6 @@ const AboutMeSection = ({ section, ...rest }: Props) => {
                 <button className="">{isOpened ? <FaCaretDown /> : <FaCaretRight />}</button>
                 <h2>{section.title}</h2>
             </div>
-            {!!(isOpened && section.info) && section.info.map((info) => <AboutMeSectionInfo info={info} />)}
-        </div>
             {!!(isOpened && section.info) &&
                 section.info.map((info) => <AboutMeSectionInfo key={info.title} info={info} />)}
         </section>
