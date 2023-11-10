@@ -1,19 +1,9 @@
 'use client';
-import React, { useState } from 'react';
-import { data, AboutSection, AboutSectionInfo, AboutSectionInfoFile } from '@/data/DataReader';
-
-type ActiveData = {
-    section: AboutSection;
-    sectionInfo: AboutSectionInfo;
-    infoFile: AboutSectionInfoFile;
-};
+import React from 'react';
+import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';
 
 const AboutMeActiveData = () => {
-    const [activeData, setActiveData] = useState<ActiveData>({
-        section: data.about.sections[0],
-        sectionInfo: data.about.sections[0].info[0],
-        infoFile: data.about.sections[0].info[0].files[0],
-    });
+    const { activeData } = useActiveData();
 
     return (
         <div className="px-7 py-9">
