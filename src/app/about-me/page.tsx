@@ -5,7 +5,7 @@ import Sections from '@/feature/AboutMe/Section/Sections';
 
 const AboutMePage = () => {
     return (
-        <Page title="_about-me" className="animate-ping-one-time">
+        <Page title="_about-me">
             <Sections />
 
             <AboutMeActiveData />
