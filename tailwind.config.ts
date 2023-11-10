@@ -9,7 +9,9 @@ const config: Config = {
                 'blue-2': '#011627',
                 'blue-3': '#1E2D3D',
                 'blue-4': '#607B96',
+                'royal-blue': '#5565E8',
                 'light-gray': '#E5E9F0',
+                'primary-blue-charcoal': '#011221',
                 'accent-turquoise': '#43D9AD',
                 'secondary-indigo': '#4D5BCE',
             },
@@ -21,12 +23,21 @@ const config: Config = {
                     '0%': { transform: 'scale(2)', opacity: '0' },
                     '75%, 100%': { transform: 'scale(1)', opacity: '1' },
                 },
+                'ping-invert-scale-inverted': {
+                    '0%': { transform: 'scale(0.66)', opacity: '0' },
+                    '75%, 100%': { transform: 'scale(1)', opacity: '1' },
+                },
             },
             animation: {
                 'ping-one-time': 'ping-invert 1s cubic-bezier(0, 0, 0.2, 1);',
+                discover: 'ping-invert-scale-inverted 500ms cubic-bezier(0, 0, 0.2, 1);',
+                'spin-slow': 'spin 2500ms linear infinite',
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwindcss-animate'),
+        // ...
+    ],
 };
 export default config;
