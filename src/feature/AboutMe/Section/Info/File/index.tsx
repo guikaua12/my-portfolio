@@ -1,3 +1,4 @@
+'use client';
 import React, { ComponentProps } from 'react';
 import { AboutSectionInfoFile } from '@/data/DataReader';
 import MIcon from '@/components/MIcon';

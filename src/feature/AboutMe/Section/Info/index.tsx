@@ -1,3 +1,4 @@
+'use client';
 import React, { ComponentProps, useState } from 'react';
 import { AboutSectionInfo } from '@/data/DataReader';
 import { FaChevronRight, FaChevronDown, FaFolderClosed } from 'react-icons/fa6';
