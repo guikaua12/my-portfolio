@@ -25,6 +25,7 @@ const AboutMeSection = ({ section, ...rest }: Props) => {
         </div>
             {!!(isOpened && section.info) &&
                 section.info.map((info) => <AboutMeSectionInfo key={info.title} info={info} />)}
+        </section>
     );
 };
 
