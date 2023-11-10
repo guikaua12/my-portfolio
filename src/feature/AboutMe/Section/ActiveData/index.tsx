@@ -6,7 +6,7 @@ const AboutMeActiveData = () => {
     const { activeData } = useActiveData();
 
     return (
-        <div className="px-7 py-9">
+        <div className="mt-9 px-7">
             <div>
                 <span className="text-white">// {activeData.section.title} </span>
                 <span>/ {activeData.sectionInfo.title}</span>
