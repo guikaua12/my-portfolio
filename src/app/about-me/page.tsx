@@ -2,6 +2,7 @@ import React from 'react';
 import { data } from '@/data/DataReader';
 import Page from '@/components/Page';
 import AboutMeSection from '@/feature/AboutMe/Section';
+import AboutMeActiveData from '@/feature/AboutMe/Section/ActiveData';
 
 const AboutMePage = () => {
     return (
@@ -13,6 +14,8 @@ const AboutMePage = () => {
                     </li>
                 ))}
             </ul>
+
+            <AboutMeActiveData />
         </Page>
     );
 };
