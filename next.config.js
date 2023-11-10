@@ -6,6 +6,9 @@ const nextConfig = {
 
         return config;
     },
+    images: {
+        remotePatterns: [{ hostname: '*' }],
+    },
 };
 
 module.exports = nextConfig;
