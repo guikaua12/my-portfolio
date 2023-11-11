@@ -69,7 +69,11 @@ const Gist = ({ gist, ...rest }: Props) => {
                         <Link className="font-bold text-royal-blue" href={`https://github.com/${gist.owner.login}`}>
                             @{gist.owner.login}
                         </Link>
-                        <span className="text-xs">{formatDistanceToNow(gist.updated_at)} ago</span>
+                        <span className="text-xs">
+                            {formatDistanceToNow(gist.updated_at, {
+                                addSuffix: true,
+                            })}
+                        </span>
                     </div>
                 </div>
 
