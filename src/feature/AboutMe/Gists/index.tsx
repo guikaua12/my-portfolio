@@ -4,13 +4,14 @@ import Gist from '@/feature/AboutMe/Gists/Gist';
 import { useQuery } from 'react-query';
 import { getAll } from '@/feature/AboutMe/Gists/services/GistService';
 import { data } from '@/data/DataReader';
-import { RiLoader2Fill } from 'react-icons/ri';
+import { RiErrorWarningFill, RiLoader2Fill, RiLoopLeftFill } from 'react-icons/ri';
 
 const Gists = () => {
-    const query = useQuery('gists', () => getAll(data.contacts.social.github.user));
     const query = useQuery('gists', () => getAll(data.contacts.social.github.user), {
         staleTime: 1000 * 60 * 5,
     });
+
+    const handleGistsRefetch = () => query.refetch();
 
     const content = {
         loading: (
@@ -23,7 +24,17 @@ const Gists = () => {
                 {query.status === 'success' && query.data.map((gist) => <Gist key={gist.id} gist={gist} />)}
             </div>
         ),
-        error: undefined,
+        error: (
+            <div className="flex flex-col items-center justify-center gap-2">
+                <div className="flex items-center justify-center gap-2 text-red-400">
+                    <RiErrorWarningFill size={28} />
+                    <p>Error while fetching gists.</p>
+                </div>
+                <button onClick={handleGistsRefetch} className="text-royal-blue ">
+                    <RiLoopLeftFill size={28} />
+                </button>
+            </div>
+        ),
         idle: undefined,
     };
 
