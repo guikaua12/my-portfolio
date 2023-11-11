@@ -13,8 +13,8 @@ export interface Gist {
     files: {
         [key: string]: File;
     };
-    created_at: string;
-    updated_at: string;
+    created_at: Date;
+    updated_at: Date;
     description: string;
     comments: number;
     owner: {
