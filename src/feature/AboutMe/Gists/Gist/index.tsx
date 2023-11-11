@@ -26,19 +26,26 @@ const Gist = ({ gist, ...rest }: Props) => {
             </div>
         ),
         success: (
-            <SyntaxHighlighter
-                language={file.language}
-                style={atomOneDark}
-                customStyle={{
-                    background: '#011221',
-                    border: '1px #1E2D3D solid',
-                    borderRadius: '1rem',
-                    padding: '1.5rem',
-                }}
-                showLineNumbers
-            >
-                {fileContentQuery.data}
-            </SyntaxHighlighter>
+            <div className="relative">
+                <SyntaxHighlighter
+                    language={file.language}
+                    style={atomOneDark}
+                    customStyle={{
+                        background: '#011221',
+                        border: '1px #1E2D3D solid',
+                        borderRadius: '1rem',
+                        padding: '1.5rem',
+                    }}
+                    showLineNumbers
+                >
+                    {fileContentQuery.data}
+                </SyntaxHighlighter>
+                <div className="absolute -top-2 right-3 rounded-md bg-blue-3 px-2 text-sm font-light text-white">
+                    <Link href={gist.html_url} target="_blank">
+                        {file.filename}
+                    </Link>
+                </div>
+            </div>
         ),
         error: undefined,
         idle: undefined,
