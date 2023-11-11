@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { handleDates } from '@/utils/date-utils';
 
 export interface File {
     filename: string;
@@ -27,7 +28,10 @@ export interface Gist {
 
 export async function getAll(username: string): Promise<Gist[]> {
     const res = await axios.get(`https://api.github.com/users/${username}/gists`);
-    return res.data;
+    const data = res.data;
+    handleDates(data);
+
+    return data;
 }
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
