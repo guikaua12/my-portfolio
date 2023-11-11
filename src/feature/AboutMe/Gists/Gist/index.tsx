@@ -14,7 +14,9 @@ interface Props extends ComponentProps<'div'> {
 
 const Gist = ({ gist, ...rest }: Props) => {
     const file = Object.values(gist.files)[0];
-    const fileContentQuery = useQuery(['gist_file_content', file.filename], () => getFileContent(file));
+    const fileContentQuery = useQuery(['gist_file_content', file.filename], () => getFileContent(file), {
+        staleTime: 1000 * 60 * 5,
+    });
 
     const fileContent = {
         loading: (

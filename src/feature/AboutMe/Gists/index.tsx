@@ -8,6 +8,9 @@ import { RiLoader2Fill } from 'react-icons/ri';
 
 const Gists = () => {
     const query = useQuery('gists', () => getAll(data.contacts.social.github.user));
+    const query = useQuery('gists', () => getAll(data.contacts.social.github.user), {
+        staleTime: 1000 * 60 * 5,
+    });
 
     const content = {
         loading: (
