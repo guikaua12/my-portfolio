@@ -7,6 +7,7 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { getFileContent, Gist } from '@/feature/AboutMe/Gists/services/GistService';
 import { useQuery } from 'react-query';
+import { formatDistanceToNow } from 'date-fns';
 
 interface Props extends ComponentProps<'div'> {
     gist: Gist;
@@ -57,12 +58,11 @@ const Gist = ({ gist, ...rest }: Props) => {
                             className="rounded-full"
                         />
                     </div>
-                    <div className="ml-3 flex flex-col items-center leading-5">
-                        <Link className="font-bold text-royal-blue" href="https://github.com/username">
+                    <div className="ml-3 flex flex-col items-start leading-5">
+                        <Link className="font-bold text-royal-blue" href={`https://github.com/${gist.owner.login}`}>
                             @{gist.owner.login}
                         </Link>
-                        {/* TODO: implement time ago */}
-                        <span className="text-xs">5 months ago</span>
+                        <span className="text-xs">{formatDistanceToNow(gist.updated_at)} ago</span>
                     </div>
                 </div>
 
