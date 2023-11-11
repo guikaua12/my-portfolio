@@ -34,7 +34,7 @@ const Gist = ({ gist, ...rest }: Props) => {
                     borderRadius: '1rem',
                     padding: '1.5rem',
                 }}
-                wraplines="true"
+                showLineNumbers
             >
                 {fileContentQuery.data}
             </SyntaxHighlighter>
