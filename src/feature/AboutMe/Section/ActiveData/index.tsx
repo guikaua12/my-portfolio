@@ -8,7 +8,7 @@ const AboutMeActiveData = () => {
     return (
         <div className="mt-9 px-7">
             <div>
-                <span className="text-white">// {activeData.section.title} </span>
+                <span className="text-white">{`// ${activeData.section.title} `}</span>
                 <span>/ {activeData.sectionInfo.title}</span>
             </div>
 

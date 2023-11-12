@@ -40,7 +40,7 @@ const Gists = () => {
 
     return (
         <section className="my-9 px-7">
-            <h1 className="mb-7 text-white">// Code snippet showcase:</h1>
+            <h1 className="mb-7 text-white">{'// Code snippet showcase:'}</h1>
 
             {content[query.status]}
         </section>
