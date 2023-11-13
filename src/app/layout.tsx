@@ -16,13 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        <html lang="en" className="h-full w-full">
             <Providers>
-                <body className={`${fira_code.className} h-screen w-full bg-blue-1 p-4 text-blue-4`}>
-                    <div className="flex min-h-full flex-col rounded-lg border border-blue-3 bg-blue-2">
+                <body className={`${fira_code.className} min-h-full w-full bg-blue-1 p-4 text-blue-4`}>
+                    <div className="flex min-h-[calc(100vh-2rem)] flex-col rounded-lg border border-blue-3 bg-blue-2">
                         <Header />
                         <WithHeaderMenu>
-                            <main className="flex-1">{children}</main>
+                            <main className="grow">{children}</main>
                         </WithHeaderMenu>
                         <Footer />
                     </div>
