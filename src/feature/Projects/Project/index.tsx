@@ -21,7 +21,7 @@ const Project = ({ project, isVisible }: Props) => {
                         ref.current.style.position = 'absolute';
                         ref.current.style.top = '-999px';
                     }
-                }, 1000);
+                }, 500);
             } else {
                 ref.current.style.position = 'static';
                 ref.current.style.top = '0';
@@ -33,7 +33,7 @@ const Project = ({ project, isVisible }: Props) => {
         <div
             ref={ref}
             className={twMerge(
-                'max-h-0 overflow-hidden transition-[max-height] delay-75 duration-1000',
+                'max-h-0 overflow-hidden transition-[max-height] delay-75 duration-500',
                 isVisible && 'max-h-[500px]'
             )}
         >
