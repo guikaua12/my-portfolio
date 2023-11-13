@@ -1,5 +1,6 @@
 import file from '@/../data.json';
 import * as icons from 'react-icons/fa6';
+import * as remixIcons from 'react-icons/ri';
 
 export type AboutSectionInfoFile = {
     name: string;
@@ -25,6 +26,21 @@ export type FindMeAlsoInSource = {
     url: string;
     user: string;
     icon: keyof typeof icons;
+};
+
+export type Technology = {
+    name: string;
+    icon: keyof typeof remixIcons;
+    color: string;
+};
+
+export type Project = {
+    id: string;
+    title: string;
+    description: string;
+    img: string;
+    tech: string[];
+    url: string;
 };
 
 export type Data = {
@@ -54,6 +70,12 @@ export type Data = {
             title: string;
             sources: FindMeAlsoInSource[];
         };
+    };
+    technologies: {
+        [key: string]: Technology;
+    };
+    projects: {
+        [key: string]: Project;
     };
 };
 

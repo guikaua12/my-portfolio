@@ -11,6 +11,8 @@ const config: Config = {
                 'blue-4': '#607B96',
                 'royal-blue': '#5565E8',
                 'light-gray': '#E5E9F0',
+                mirage: '#1C2B3A',
+                'regent-st-blue': '#A0BDE1',
                 'primary-blue-charcoal': '#011221',
                 'accent-turquoise': '#43D9AD',
                 'secondary-indigo': '#4D5BCE',

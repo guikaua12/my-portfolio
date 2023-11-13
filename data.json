@@ -153,58 +153,84 @@
     "1": "83861a67e377633ee8368df01ee3a355",
     "2": "694c1f32332788a2ac7f37b09e5aa40e"
   },
+  "technologies": {
+    "React": {
+      "name": "React",
+      "icon": "RiReactjsLine",
+      "color": "#86E1F9"
+    },
+    "HTML": {
+      "name": "HTML",
+      "icon": "RiHtml5Fill",
+      "color": "#e34c26"
+    },
+    "CSS": {
+      "name": "CSS",
+      "icon": "RiCss3Fill",
+      "color": "#264de4"
+    }
+  },
   "projects": {
     "1": {
+      "id": "1",
       "title": "_ui-animations",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/projects/ui-animations2.png",
+      "img": "/images/Project_1.png",
       "tech": [
         "Flutter"
       ],
       "url": "https://github.com/"
     },
     "2": {
+      "id": "2",
       "title": "_ai-resources",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/projects/ai-resources.png",
+      "img": "/images/Project_1.png",
       "tech": [
-        "Gatsby"
+        "CSS"
       ],
       "url": "https://github.com/"
     },
     "3": {
+      "id": "3",
       "title": "_worldmap",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/projects/worldmap.png",
+      "img": "/images/Project_1.png",
       "tech": [
-        "Angular"
+        "HTML",
+        "CSS"
       ],
       "url": "https://github.com/"
     },
     "4": {
+      "id": "4",
       "title": "_ui-animations",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/projects/ui-animations.png",
+      "img": "/images/Project_1.png",
       "tech": [
         "React"
       ],
       "url": "https://github.com/"
     },
     "5": {
+      "id": "5",
       "title": "_tetris-game",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/projects/tetris-game.png",
+      "img": "/images/Project_1.png",
       "tech": [
         "React"
       ],
       "url": "https://github.com/"
     },
     "6": {
+      "id": "6",
       "title": "_ethereum",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/projects/ethereum.png",
+      "img": "/images/Project_1.png",
       "tech": [
-        "Vue"
+        "HTML",
+        "CSS",
+        "React"
       ],
       "url": "https://github.com/"
     }
