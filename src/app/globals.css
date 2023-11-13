@@ -6,4 +6,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-text-stroke: .025em rgba(51, 51, 51, 0.50);
 }
