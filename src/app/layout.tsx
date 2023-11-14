@@ -18,8 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className="h-full w-full">
             <Providers>
-                <body className={`${fira_code.className} min-h-full w-full bg-blue-1 p-4 text-blue-4`}>
-                    <div className="flex min-h-[calc(100vh-2rem)] flex-col rounded-lg border border-blue-3 bg-blue-2">
+                <body className={`${fira_code.className} min-h-full w-full bg-blue-1 p-4 text-blue-4 sm:p-16`}>
+                    <div className="flex min-h-[calc(100vh-2rem)] flex-col rounded-lg border border-blue-3 bg-blue-2 sm:min-h-[calc(100vh-8.5rem)] sm:overflow-hidden">
                         <Header />
                         <WithHeaderMenu>
                             <main className="grow">{children}</main>
