@@ -21,7 +21,7 @@ const Sections = () => {
             {/* desktop */}
             <div className="hidden flex-col gap-8 border-r p-6 lg:flex">
                 {data.about.sections.map((section) => (
-                    <button onClick={() => onSectionClick(section)}>
+                    <button key={section.title} onClick={() => onSectionClick(section)}>
                         <RemixIcon
                             className={twMerge('opacity-40', activeData.section === section && 'opacity-100')}
                             name={section.icon}
