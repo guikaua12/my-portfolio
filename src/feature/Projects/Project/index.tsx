@@ -40,9 +40,9 @@ const Project = ({ project, isVisible }: Props) => {
             <h1 className="mb-4 font-bold text-secondary-indigo">
                 Project {project.id} <span className="font-medium text-blue-4"> / {project.title}</span>
             </h1>
-            <div className="flex flex-col overflow-hidden rounded-2xl border border-blue-3">
+            <div className="flex flex-col overflow-hidden rounded-2xl border">
                 {/* image */}
-                <div className="relative h-[146px] w-full border-b border-b-blue-3">
+                <div className="relative h-[146px] w-full border-b">
                     <Image
                         src={project.img}
                         alt="Projet image"

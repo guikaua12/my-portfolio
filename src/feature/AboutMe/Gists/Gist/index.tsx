@@ -21,7 +21,7 @@ const Gist = ({ gist, ...rest }: Props) => {
 
     const fileContent = {
         loading: (
-            <div className="flex items-center justify-center rounded-xl border border-blue-3 bg-primary-blue-charcoal p-6">
+            <div className="flex items-center justify-center rounded-xl border bg-primary-blue-charcoal p-6">
                 <RiLoader2Fill size={32} className="animate-spin-slow" />
             </div>
         ),
