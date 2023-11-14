@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <header className="flex w-full justify-between border-b p-4 sm:p-0">
-            <Link className="sm:px-5 sm:py-4" href="/" onClick={closeMenu}>
+            <Link className="sm:w-full sm:max-w-[18.75rem] sm:px-5 sm:py-4" href="/" onClick={closeMenu}>
                 {data.logo_name}
             </Link>
             <HeaderMobileMenuButton />

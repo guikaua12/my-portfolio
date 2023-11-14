@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import './index.style.css';
 import Gist from '@/feature/AboutMe/Gists/Gist';
 import { useQuery } from 'react-query';
 import { getAll } from '@/feature/AboutMe/Gists/services/GistService';
@@ -20,7 +21,9 @@ const Gists = () => {
             </div>
         ),
         success: (
-            <div className="flex flex-col gap-5">{query.data?.map((gist) => <Gist key={gist.id} gist={gist} />)}</div>
+            <div className="gists flex flex-col gap-5 sm:max-h-[60vh] sm:max-w-[600px] sm:overflow-scroll">
+                {query.data?.map((gist) => <Gist key={gist.id} gist={gist} />)}
+            </div>
         ),
         error: (
             <div className="flex flex-col items-center justify-center gap-2">
@@ -37,8 +40,8 @@ const Gists = () => {
     };
 
     return (
-        <section className="my-9 px-7">
-            <h1 className="mb-7 text-white">{'// Code snippet showcase:'}</h1>
+        <section className="my-9 basis-1/2 px-7">
+            <h1 className="mb-7 text-white sm:text-blue-4">{'// Code snippet showcase:'}</h1>
 
             {content[query.status]}
         </section>
