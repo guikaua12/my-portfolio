@@ -6,7 +6,7 @@ import Gists from '@/feature/AboutMe/Gists';
 
 const AboutMePage = () => {
     return (
-        <Page title="_about-me">
+        <Page className="sm:flex" title="_about-me">
             <Sections />
 
             <AboutMeActiveData />

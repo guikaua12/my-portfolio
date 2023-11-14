@@ -6,7 +6,7 @@
     "sections": [
       {
         "title": "professional-info",
-        "icon": "icons/info-professional.svg",
+        "icon": "RiTerminalBoxFill",
         "info": [
           {
             "title": "experience",
@@ -42,7 +42,7 @@
       },
       {
         "title": "personal-info",
-        "icon": "icons/info-personal.svg",
+        "icon": "RiUser4Fill",
         "info": [
           {
             "title": "bio",
@@ -82,7 +82,7 @@
       },
       {
         "title": "hobbies-info",
-        "icon": "icons/info-hobbies.svg",
+        "icon": "RiGamepadFill",
         "info": [
           {
             "title": "sports",

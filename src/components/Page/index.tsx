@@ -8,7 +8,7 @@ interface Props extends ComponentProps<'section'> {
 const Page = ({ title, children, className, ...rest }: Props) => {
     return (
         <section className={className} {...rest}>
-            <h1 className="px-7 py-5 text-sm font-light text-white">{title}</h1>
+            <h1 className="px-7 py-5 text-sm font-light text-white sm:hidden">{title}</h1>
             {children}
         </section>
     );

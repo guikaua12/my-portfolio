@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const DesktopHeaderMenu = () => {
     return (
-        <nav className="ml-36 hidden flex-1 justify-between bg-blue-2 sm:flex">
+        <nav className="ml-48 hidden flex-1 justify-between bg-blue-2 sm:flex">
             <ul className="flex divide-x divide-blue-3 border-x text-white">
                 <li>
                     <Link href="#" className="inline-block w-full px-8 py-4">

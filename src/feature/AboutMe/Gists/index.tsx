@@ -20,9 +20,7 @@ const Gists = () => {
             </div>
         ),
         success: (
-            <div className="flex flex-col gap-5">
-                {query.status === 'success' && query.data.map((gist) => <Gist key={gist.id} gist={gist} />)}
-            </div>
+            <div className="flex flex-col gap-5">{query.data?.map((gist) => <Gist key={gist.id} gist={gist} />)}</div>
         ),
         error: (
             <div className="flex flex-col items-center justify-center gap-2">

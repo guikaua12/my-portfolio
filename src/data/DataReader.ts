@@ -17,7 +17,7 @@ export type AboutSectionInfo = {
 
 export type AboutSection = {
     title: string;
-    icon: string;
+    icon: keyof typeof remixIcons;
     info: AboutSectionInfo[];
 };
 
