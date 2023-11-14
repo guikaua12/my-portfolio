@@ -6,9 +6,9 @@ export default function Home() {
     const gists = Array.from({ length: 5 });
 
     return (
-        <section className="relative mt-24 p-7 text-light-gray sm:pb-2">
+        <section className="relative mt-24 p-7 text-light-gray lg:pb-2">
             {/*primary-blue-charcoal*/}
-            <div className="mx-0 flex gap-16 sm:mx-72">
+            <div className="mx-0 flex gap-16 lg:mx-72">
                 <div>
                     <span className="relative z-10">Hi all. I am</span>
                     <h1 className="relative z-10 text-5xl leading-[56px]">{data.name}</h1>
@@ -17,7 +17,7 @@ export default function Home() {
                     <h3 className="mt-1 text-xl text-accent-turquoise">{`> ${data.role}`}</h3>
 
                     {/* GitHub profile */}
-                    <div className="mt-80 sm:mt-20">
+                    <div className="mt-80 lg:mt-20">
                         <span className="text-blue-4">{'// find my profile on GitHub:'}</span>
 
                         <SyntaxHighlighter
@@ -32,7 +32,7 @@ export default function Home() {
                         </SyntaxHighlighter>
                     </div>
                 </div>
-                <div className="z-10 -mt-[7.75rem] hidden max-h-[calc(100vh-17rem)] flex-col gap-4 overflow-hidden sm:flex">
+                <div className="z-10 -mt-[7.75rem] hidden max-h-[calc(100vh-17rem)] flex-col gap-4 overflow-hidden lg:flex">
                     {gists.map((_) => (
                         <SyntaxHighlighter
                             language="javascript"
@@ -59,8 +59,8 @@ export default function Home() {
             </div>
 
             {/*gradient blur effect*/}
-            <div className="absolute top-0 z-0 h-32 w-32 bg-accent-turquoise blur-[80px] sm:left-[50%] sm:h-[240px] sm:w-[240px] sm:blur-[150px]"></div>
-            <div className="absolute left-40 top-32 h-32 w-32 bg-secondary-indigo blur-[80px] sm:left-[65%] sm:top-[35%] sm:h-[190px] sm:w-[190px] sm:blur-[120px]"></div>
+            <div className="absolute top-0 z-0 h-32 w-32 bg-accent-turquoise blur-[80px] lg:left-[50%] lg:h-[240px] lg:w-[240px] lg:blur-[150px]"></div>
+            <div className="absolute left-40 top-32 h-32 w-32 bg-secondary-indigo blur-[80px] lg:left-[65%] lg:top-[35%] lg:h-[190px] lg:w-[190px] lg:blur-[120px]"></div>
         </section>
     );
 }

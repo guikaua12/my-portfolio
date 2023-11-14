@@ -51,7 +51,7 @@ const Gist = ({ gist, ...rest }: Props) => {
     };
 
     return (
-        <div className="animate-discover sm:max-w-[600px]" {...rest}>
+        <div className="animate-discover lg:max-w-[600px]" {...rest}>
             <div className="mb-3 flex items-start justify-between">
                 <div className="flex">
                     {/* profile image */}

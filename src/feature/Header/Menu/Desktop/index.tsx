@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const DesktopHeaderMenu = () => {
     return (
-        <nav className="hidden flex-1 justify-between bg-blue-2 sm:flex">
+        <nav className="hidden flex-1 justify-between bg-blue-2 lg:flex">
             <ul className="flex divide-x divide-blue-3 border-x text-white">
                 <li>
                     <Link href="#" className="inline-block w-full px-8 py-4">
@@ -21,7 +21,7 @@ const DesktopHeaderMenu = () => {
                     </Link>
                 </li>
             </ul>
-            <button className="border-l sm:px-5 sm:py-4">_contact-me</button>
+            <button className="border-l lg:px-5 lg:py-4">_contact-me</button>
         </nav>
     );
 };

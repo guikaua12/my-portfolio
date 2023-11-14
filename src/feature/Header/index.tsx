@@ -10,8 +10,8 @@ const Header = () => {
     const { closeMenu } = useMobileHeaderMenu();
 
     return (
-        <header className="flex w-full justify-between border-b p-4 sm:p-0">
-            <Link className="sm:w-full sm:max-w-[18.75rem] sm:px-5 sm:py-4" href="/" onClick={closeMenu}>
+        <header className="flex w-full justify-between border-b p-4 lg:p-0">
+            <Link className="lg:w-full lg:max-w-[18.75rem] lg:px-5 lg:py-4" href="/" onClick={closeMenu}>
                 {data.logo_name}
             </Link>
             <HeaderMobileMenuButton />

@@ -21,7 +21,7 @@ const Gists = () => {
             </div>
         ),
         success: (
-            <div className="gists flex flex-col gap-5 sm:max-h-[60vh] sm:max-w-[600px] sm:overflow-scroll">
+            <div className="gists flex flex-col gap-5 lg:max-h-[60vh] lg:max-w-[600px] lg:overflow-scroll">
                 {query.data?.map((gist) => <Gist key={gist.id} gist={gist} />)}
             </div>
         ),
@@ -41,7 +41,7 @@ const Gists = () => {
 
     return (
         <section className="my-9 basis-1/2 px-7">
-            <h1 className="mb-7 text-white sm:text-blue-4">{'// Code snippet showcase:'}</h1>
+            <h1 className="mb-7 text-white lg:text-blue-4">{'// Code snippet showcase:'}</h1>
 
             {content[query.status]}
         </section>

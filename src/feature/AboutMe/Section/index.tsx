@@ -18,7 +18,7 @@ const AboutMeSection = ({ section, ...rest }: Props) => {
     return (
         <section className="cursor-pointer select-none">
             <div
-                className="flex w-full gap-3 bg-blue-3 px-7 py-1 text-white sm:border-b sm:bg-blue-2 sm:px-4 sm:py-2.5"
+                className="flex w-full gap-3 bg-blue-3 px-7 py-1 text-white lg:border-b lg:bg-blue-2 lg:px-4 lg:py-2.5"
                 onClick={toggleOpenState}
                 {...rest}
             >

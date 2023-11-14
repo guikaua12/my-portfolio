@@ -19,7 +19,7 @@ const Sections = () => {
     return (
         <>
             {/* desktop */}
-            <div className="hidden flex-col gap-8 border-r p-6 sm:flex">
+            <div className="hidden flex-col gap-8 border-r p-6 lg:flex">
                 {data.about.sections.map((section) => (
                     <button onClick={() => onSectionClick(section)}>
                         <RemixIcon
@@ -32,7 +32,7 @@ const Sections = () => {
             </div>
 
             {/* mobile */}
-            <ul className="flex flex-col gap-1 sm:hidden">
+            <ul className="flex flex-col gap-1 lg:hidden">
                 {data.about.sections.map((section) => (
                     <li key={section.title}>
                         <AboutMeSection section={section} />

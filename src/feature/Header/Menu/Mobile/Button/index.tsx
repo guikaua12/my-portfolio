@@ -7,7 +7,7 @@ const HeaderMobileMenuButton = () => {
     const { isMenuOpen, toggleMenu } = useMobileHeaderMenu();
 
     return (
-        <button className="sm:hidden" onClick={toggleMenu}>
+        <button className="lg:hidden" onClick={toggleMenu}>
             {isMenuOpen ? <FaXmark size={24} /> : <FaBars size={20} />}
         </button>
     );
