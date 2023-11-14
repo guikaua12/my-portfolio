@@ -18,17 +18,16 @@ export const HeaderMobileMenuProvider = ({ children }: { children: ReactNode }) 
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-    const handleResize = () => {
-        if (window.innerWidth > 640 && isMenuOpen) {
-            closeMenu();
-        }
-    };
-
     useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 640 && isMenuOpen) {
+                closeMenu();
+            }
+        };
         window.addEventListener('resize', handleResize);
 
         return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    }, [isMenuOpen]);
 
     return (
         <HeaderMobileMenuContext.Provider

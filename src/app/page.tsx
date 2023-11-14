@@ -3,7 +3,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function Home() {
-    const gists = Array.from({ length: 5 });
+    const gists = Array.from({ length: 5 }).map((_, i) => i);
 
     return (
         <section className="relative mt-24 p-7 text-light-gray lg:pb-2">
@@ -35,6 +35,7 @@ export default function Home() {
                 <div className="z-10 -mt-[7.75rem] hidden max-h-[calc(100vh-17rem)] flex-col gap-4 overflow-hidden lg:flex">
                     {gists.map((_) => (
                         <SyntaxHighlighter
+                            key={_}
                             language="javascript"
                             style={atomOneDark}
                             customStyle={{

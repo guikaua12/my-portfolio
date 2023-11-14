@@ -76,7 +76,8 @@ const Projects = () => {
 
             <div className="my-9 px-7">
                 <h2 className="text-white">
-                    // projects <span className="text-blue-4"> / {getFilteredTechsString(filteredTechs)}</span>
+                    {'// projects '}
+                    <span className="text-blue-4"> / {getFilteredTechsString(filteredTechs)}</span>
                 </h2>
 
                 <div className="mt-4 flex flex-col gap-5 overflow-hidden">
