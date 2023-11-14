@@ -3,7 +3,7 @@ import { Fira_Code } from 'next/font/google';
 import './globals.css';
 import Header from '@/feature/Header';
 import React from 'react';
-import WithHeaderMenu from '@/feature/Header/Menu/WithHeaderMenu';
+import WithMobileHeaderMenu from '../feature/Header/Menu/Mobile/WithMobileHeaderMenu';
 import Footer from '@/feature/Footer';
 import Providers from '@/feature/context/Providers';
 
@@ -21,9 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <body className={`${fira_code.className} min-h-full w-full bg-blue-1 p-4 text-blue-4 sm:p-16`}>
                     <div className="flex min-h-[calc(100vh-2rem)] flex-col rounded-lg border border-blue-3 bg-blue-2 sm:min-h-[calc(100vh-8.5rem)] sm:overflow-hidden">
                         <Header />
-                        <WithHeaderMenu>
+                        <WithMobileHeaderMenu>
                             <main className="grow">{children}</main>
-                        </WithHeaderMenu>
+                        </WithMobileHeaderMenu>
                         <Footer />
                     </div>
                 </body>

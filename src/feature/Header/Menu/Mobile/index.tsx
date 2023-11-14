@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import { useHeaderMenu } from '@/feature/Header/Menu/hook/useHeaderMenu';
+import { useMobileHeaderMenu } from '@/feature/Header/Menu/Mobile/hook/useMobileHeaderMenu';
 
-const HeaderMenu = () => {
-    const { closeMenu } = useHeaderMenu();
+const MobileHeaderMenu = () => {
+    const { closeMenu } = useMobileHeaderMenu();
 
     return (
         <nav className="flex-1 bg-blue-2">
@@ -33,4 +33,4 @@ const HeaderMenu = () => {
     );
 };
 
-export default HeaderMenu;
+export default MobileHeaderMenu;
