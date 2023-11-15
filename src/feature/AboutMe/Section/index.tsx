@@ -9,7 +9,7 @@ interface Props extends ComponentProps<'div'> {
 }
 
 const AboutMeSection = ({ section, ...rest }: Props) => {
-    const [isOpened, setIsOpened] = useState(false);
+    const [isOpened, setIsOpened] = useState(window.innerWidth >= 1024);
 
     const toggleOpenState = () => {
         setIsOpened((prevState) => !prevState);
