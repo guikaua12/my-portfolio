@@ -97,7 +97,6 @@ const Projects = () => {
                     <div className="projects mt-4 flex auto-rows-min flex-col gap-5 lg:mt-0 lg:grid lg:max-h-[70vh] lg:flex-1 lg:grid-cols-3 lg:gap-10 lg:overflow-scroll lg:p-16">
                         {Object.values(data.projects).map((project) => (
                             <Project key={project.id} project={project} isVisible={!!filteredProjects[project.id]} />
-                            // <div></div>
                         ))}
                     </div>
                     <FakeScrollBar className="hidden lg:block" />
