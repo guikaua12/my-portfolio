@@ -75,11 +75,7 @@ const Projects = () => {
 
     return (
         <>
-            <Technologies
-                onTechnologyClick={onTechnologyClick}
-                filteredTechs={filteredTechs}
-                defaultOpen={window.innerWidth > 1024}
-            />
+            <Technologies onTechnologyClick={onTechnologyClick} filteredTechs={filteredTechs} defaultOpen={true} />
 
             <div className="my-9 flex-col px-7 lg:my-0 lg:flex lg:flex-1 lg:basis-4/5 lg:px-0">
                 <h2 className="text-white lg:hidden">
