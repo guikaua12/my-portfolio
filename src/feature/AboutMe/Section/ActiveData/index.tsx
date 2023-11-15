@@ -3,6 +3,7 @@ import React from 'react';
 import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';
 import AboutMeSection from '@/feature/AboutMe/Section';
 import { RiCloseFill } from 'react-icons/ri';
+import FakeScrollBar from '@/components/FakeScrollBar';
 
 const AboutMeActiveData = () => {
     const { activeData } = useActiveData();
@@ -20,14 +21,17 @@ const AboutMeActiveData = () => {
             <div className="mt-9 hidden basis-[330px] lg:mt-0 lg:block lg:border-r">
                 <AboutMeSection section={activeData.section} />
             </div>
-            <div className="hidden basis-1/2 flex-col border-r lg:flex">
-                <div className="flex w-full max-w-max items-center justify-between gap-16 border-r bg-blue-2 px-4 py-2.5">
-                    <span className="">{activeData.section.title}</span>
-                    <button>
-                        <RiCloseFill size={20} />
-                    </button>
+            <div className="hidden basis-1/2 border-r lg:flex">
+                <div className="flex-1">
+                    <div className="flex w-full max-w-max items-center justify-between gap-16 border-r bg-blue-2 px-4 py-2.5">
+                        <span className="">{activeData.section.title}</span>
+                        <button>
+                            <RiCloseFill size={20} />
+                        </button>
+                    </div>
+                    <div className="border-t p-4">{activeData.infoFile.description}</div>
                 </div>
-                <div className="border-t p-4">{activeData.infoFile.description}</div>
+                <FakeScrollBar />
             </div>
         </>
     );

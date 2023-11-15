@@ -35,6 +35,7 @@ const Gist = ({ gist, ...rest }: Props) => {
                         border: '1px #1E2D3D solid',
                         borderRadius: '1rem',
                         padding: '1.5rem',
+                        maxHeight: '16rem',
                     }}
                 >
                     {fileContentQuery.data}
@@ -51,7 +52,7 @@ const Gist = ({ gist, ...rest }: Props) => {
     };
 
     return (
-        <div className="animate-discover lg:max-w-[600px]" {...rest}>
+        <div className="animate-discover" {...rest}>
             <div className="mb-3 flex items-start justify-between">
                 <div className="flex">
                     {/* profile image */}

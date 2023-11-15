@@ -6,6 +6,7 @@ import { useQuery } from 'react-query';
 import { getAll } from '@/feature/AboutMe/Gists/services/GistService';
 import { data } from '@/data/DataReader';
 import { RiErrorWarningFill, RiLoader2Fill, RiLoopLeftFill } from 'react-icons/ri';
+import FakeScrollBar from '@/components/FakeScrollBar';
 
 const Gists = () => {
     const query = useQuery('gists', () => getAll(data.contacts.social.github.user), {
@@ -21,7 +22,7 @@ const Gists = () => {
             </div>
         ),
         success: (
-            <div className="gists flex flex-col gap-5 lg:max-h-[60vh] lg:max-w-[600px] lg:overflow-scroll">
+            <div className="gists flex flex-col gap-5 lg:max-h-[60vh]  lg:overflow-auto">
                 {query.data?.map((gist) => <Gist key={gist.id} gist={gist} />)}
             </div>
         ),
@@ -40,10 +41,15 @@ const Gists = () => {
     };
 
     return (
-        <section className="my-9 basis-1/2 px-7">
-            <h1 className="mb-7 text-white lg:text-blue-4">{'// Code snippet showcase:'}</h1>
+        <section className="flex basis-1/2 overflow-auto">
+            <div className="my-9 flex-1 overflow-auto px-7">
+                <h1 className="mb-7 text-white lg:text-blue-4">{'// Code snippet showcase:'}</h1>
 
-            {content[query.status]}
+                {content[query.status]}
+            </div>
+
+            {/* fake scroll bar */}
+            <FakeScrollBar />
         </section>
     );
 };

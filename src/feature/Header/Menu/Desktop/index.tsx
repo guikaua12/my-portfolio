@@ -2,10 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { twMerge } from 'tailwind-merge';
+import { useRouter } from 'next/router';
 
 const DesktopHeaderMenu = () => {
     const pathname = usePathname();
-    console.log(pathname);
+    // const x = useRouter();
 
     return (
         <nav className="hidden flex-1 justify-between bg-blue-2 lg:flex">
