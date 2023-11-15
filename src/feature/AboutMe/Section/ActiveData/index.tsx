@@ -29,9 +29,14 @@ const AboutMeActiveData = () => {
                             <RiCloseFill size={20} />
                         </button>
                     </div>
-                    <div className="border-t p-4">{activeData.infoFile.description}</div>
+                    <div className="flex border-t">
+                        <div
+                            className="active-info--content max-h-[70vh] overflow-scroll p-4"
+                            dangerouslySetInnerHTML={{ __html: activeData.infoFile.description }}
+                        ></div>
+                        <ScrollBar element=".active-info--content" />
+                    </div>
                 </div>
-                <ScrollBar />
             </div>
         </>
     );
