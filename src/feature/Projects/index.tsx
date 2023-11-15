@@ -5,7 +5,7 @@ import Technologies from '@/feature/Projects/Technologies';
 import { data, Technology, Project as ProjectType } from '@/data/DataReader';
 import Project from '@/feature/Projects/Project';
 import { RiCloseFill } from 'react-icons/ri';
-import FakeScrollBar from '@/components/FakeScrollBar';
+import ScrollBar from '../../components/ScrollBar';
 
 export type FilteredTechs = {
     [key: string]: Technology;
@@ -95,7 +95,7 @@ const Projects = () => {
                             <Project key={project.id} project={project} isVisible={!!filteredProjects[project.id]} />
                         ))}
                     </div>
-                    <FakeScrollBar className="hidden lg:block" />
+                    <ScrollBar className="hidden lg:block" element=".projects" />
                 </div>
             </div>
         </>
