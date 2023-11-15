@@ -4,7 +4,7 @@ import Projects from '@/feature/Projects';
 
 const ProjectsPage = () => {
     return (
-        <Page title="_projects">
+        <Page title="_projects" className="flex-1 lg:flex">
             <Projects />
         </Page>
     );

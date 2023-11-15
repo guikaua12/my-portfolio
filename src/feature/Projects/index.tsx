@@ -1,8 +1,11 @@
 'use client';
 import React, { useCallback, useState } from 'react';
+import './index.style.css';
 import Technologies from '@/feature/Projects/Technologies';
 import { data, Technology, Project as ProjectType } from '@/data/DataReader';
 import Project from '@/feature/Projects/Project';
+import { RiCloseFill } from 'react-icons/ri';
+import FakeScrollBar from '@/components/FakeScrollBar';
 
 export type FilteredTechs = {
     [key: string]: Technology;
@@ -72,18 +75,32 @@ const Projects = () => {
 
     return (
         <>
-            <Technologies onTechnologyClick={onTechnologyClick} filteredTechs={filteredTechs} />
+            <Technologies
+                onTechnologyClick={onTechnologyClick}
+                filteredTechs={filteredTechs}
+                defaultOpen={window.innerWidth > 1024}
+            />
 
-            <div className="my-9 px-7">
-                <h2 className="text-white">
+            <div className="my-9 flex-col px-7 lg:my-0 lg:flex lg:flex-1 lg:basis-4/5 lg:px-0">
+                <h2 className="text-white lg:hidden">
                     {'// projects '}
                     <span className="text-blue-4"> / {getFilteredTechsString(filteredTechs)}</span>
                 </h2>
 
-                <div className="mt-4 flex flex-col gap-5 overflow-hidden">
-                    {Object.values(data.projects).map((project) => (
-                        <Project key={project.id} project={project} isVisible={!!filteredProjects[project.id]} />
-                    ))}
+                <div className="hidden max-w-max gap-16 border-r px-4 py-2.5 lg:flex">
+                    {getFilteredTechsString(filteredTechs)}
+                    <button>
+                        <RiCloseFill size={20} />
+                    </button>
+                </div>
+                <div className="flex lg:h-full lg:border-t">
+                    <div className="projects mt-4 flex auto-rows-min flex-col gap-5 lg:mt-0 lg:grid lg:max-h-[70vh] lg:flex-1 lg:grid-cols-3 lg:gap-10 lg:overflow-scroll lg:p-16">
+                        {Object.values(data.projects).map((project) => (
+                            <Project key={project.id} project={project} isVisible={!!filteredProjects[project.id]} />
+                            // <div></div>
+                        ))}
+                    </div>
+                    <FakeScrollBar className="hidden lg:block" />
                 </div>
             </div>
         </>

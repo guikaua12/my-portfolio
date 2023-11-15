@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
+import { twMerge } from 'tailwind-merge';
 
-const FakeScrollBar = () => {
+const FakeScrollBar = ({ className, ...rest }: ComponentProps<'div'>) => {
     return (
-        <div className="border-l p-1">
+        <div className={twMerge('border-l p-1', className)} {...rest}>
             <div className="hidden bg-blue-4 px-2 py-1 lg:block"></div>
         </div>
     );
