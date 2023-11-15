@@ -3,7 +3,7 @@ import React from 'react';
 import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';
 import AboutMeSection from '@/feature/AboutMe/Section';
 import { RiCloseFill } from 'react-icons/ri';
-import FakeScrollBar from '@/components/FakeScrollBar';
+import ScrollBar from '../../../../components/ScrollBar';
 
 const AboutMeActiveData = () => {
     const { activeData } = useActiveData();
@@ -31,7 +31,7 @@ const AboutMeActiveData = () => {
                     </div>
                     <div className="border-t p-4">{activeData.infoFile.description}</div>
                 </div>
-                <FakeScrollBar />
+                <ScrollBar />
             </div>
         </>
     );
