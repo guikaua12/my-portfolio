@@ -1,0 +1,8 @@
+.active-info--content::-webkit-scrollbar {
+    display: none;
+}
+
+.active-info--content {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

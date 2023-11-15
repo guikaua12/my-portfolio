@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import './index.style.css';
 import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';
 import AboutMeSection from '@/feature/AboutMe/Section';
 import { RiCloseFill } from 'react-icons/ri';
