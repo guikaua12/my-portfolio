@@ -6,7 +6,7 @@ export default function Home() {
     const gists = Array.from({ length: 5 }).map((_, i) => i);
 
     return (
-        <section className="relative mt-24 p-7 text-light-gray lg:pb-2">
+        <section className="relative mt-24 flex-1 p-7 text-light-gray lg:pb-2">
             {/*primary-blue-charcoal*/}
             <div className="mx-0 flex gap-16 lg:mx-72">
                 <div>
