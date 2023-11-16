@@ -10,21 +10,21 @@
         "info": [
           {
             "title": "experience",
-            "description": "<br>Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "description": "Info about my professional experience",
             "files": [
               {
                 "name": "index",
-                "description": "Some text"
+                "description": "I am a self-taught programmer with a passion for creating interactive applications. I started coding in 2021, when I wrote some simple Python scripts to automate some tasks in the games I played. I enjoyed the challenge and the satisfaction of making things work with code, so I decided to pursue programming as a hobby and a career.<br><br>In 2022, I began developing plugins for Bukkit/Spigot servers, which are platforms for running Minecraft multiplayer servers. I learned how to use Java, the Bukkit API, and various libraries and frameworks. I also started doing commissions for other server owners, who hired me to develop plugins according to their specifications and needs. I gained valuable experience in working with clients, managing projects, and delivering quality products.<br><br>In December 2022, I expanded my skill set by studying web development, both frontend and backend. I took some online courses to learn the basics of HTML, CSS, JavaScript, and Node.js, as well as some popular tools and frameworks such as Tailwind, React, Express, and MongoDB. I applied my knowledge by building some personal projects, such as this portfolio website, and a Trips website. I also learned how to use Git, GitHub, and Vercel to manage and deploy my code.<br><br>I am always eager to learn new technologies and improve my skills. I am looking for opportunities to work on exciting and challenging projects.<br><br>**Note:** I have not stopped developing plugins for Bukkit/Spigot servers. I still enjoy working on them and I am open to new commissions. Web development is an additional skill  (will soon be the main) that I have acquired and I can also make websites for various purposes."
               }
             ]
           },
           {
             "title": "hard-skills",
-            "description": "<br>As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "description": "Info about my hard-skills",
             "files": [
               {
                 "name": "index",
-                "description": "Some text"
+                "description": "As a Fullstack developer, I have a strong background in web development, both frontend and backend. I use Typescript on almost all my projects, as it helps me write clean and maintainable code.<br><br>Frontend skills:<br>- HTML, CSS, JS, TS<br>- React<br>- Next<br>- Tailwind<br><br>Backend skills:<br>- Node.js<br>- Express.js<br>- I also know clean-code, clean architecture, SOLID, some conventions, etc..."
               }
             ]
           },
