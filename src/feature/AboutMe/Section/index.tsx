@@ -9,7 +9,8 @@ interface Props extends ComponentProps<'div'> {
 }
 
 const AboutMeSection = ({ section, ...rest }: Props) => {
-    const [isOpened, setIsOpened] = useState(window.innerWidth >= 1024);
+    // TODO: Add a way to open the section by default
+    const [isOpened, setIsOpened] = useState(true /*window.innerWidth >= 1024*/);
 
     const toggleOpenState = () => {
         setIsOpened((prevState) => !prevState);

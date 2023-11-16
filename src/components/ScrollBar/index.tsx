@@ -33,8 +33,8 @@ const ScrollBar = ({ element, className, ...rest }: Props) => {
     }, [element, scrollRef]);
 
     return (
-        <div className={twMerge('border-l p-1', className)} {...rest}>
-            <div ref={scrollRef} className={twMerge('hidden w-full bg-blue-4 px-2 py-1 lg:block')}></div>
+        <div className={twMerge('hidden border-l p-1 lg:block', className)} {...rest}>
+            <div ref={scrollRef} className={twMerge('w-full bg-blue-4 px-2 py-1')}></div>
         </div>
     );
 };

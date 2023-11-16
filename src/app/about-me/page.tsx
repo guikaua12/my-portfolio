@@ -6,7 +6,7 @@ import Gists from '@/feature/AboutMe/Gists';
 
 const AboutMePage = () => {
     return (
-        <Page className="flex-grow lg:flex" title="_about-me">
+        <Page className="lg: flex-grow overflow-auto lg:flex" title="_about-me">
             <Sections />
 
             <AboutMeActiveData />
