@@ -57,19 +57,22 @@ const getFilteredProjects = (filteredTechs: FilteredTechs): FilteredProjects => 
 const Projects = () => {
     const [filteredTechs, setFilteredTechs] = useState<FilteredTechs>({} as FilteredTechs);
 
-    const onTechnologyClick = useCallback((technology: Technology) => {
-        setFilteredTechs((prevState) => {
-            if (prevState[technology.name]) {
-                const { [technology.name]: _, ...rest } = prevState;
-                return rest;
-            }
+    const onTechnologyClick = useCallback(
+        (technology: Technology) => {
+            setFilteredTechs((prevState) => {
+                if (prevState[technology.name]) {
+                    const { [technology.name]: _, ...rest } = prevState;
+                    return rest;
+                }
 
-            return {
-                ...prevState,
-                [technology.name]: technology,
-            };
-        });
-    }, []);
+                return {
+                    ...prevState,
+                    [technology.name]: technology,
+                };
+            });
+        },
+        [setFilteredTechs]
+    );
 
     const filteredProjects = getFilteredProjects(filteredTechs);
 
