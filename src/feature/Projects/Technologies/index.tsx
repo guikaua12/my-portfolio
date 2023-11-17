@@ -27,7 +27,7 @@ const Technologies = ({ onTechnologyClick, filteredTechs, defaultOpen = false }:
                     <h2>projects</h2>
                 </div>
                 {isOpened && (
-                    <div className="mt-2 px-7 py-1">
+                    <div className="mt-2 flex flex-col gap-2 px-7 py-1">
                         {Object.values(data.technologies).map((technology) => (
                             <Technology
                                 key={technology.name}
