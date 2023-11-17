@@ -3,7 +3,7 @@ import { Project as ProjectType, data } from '@/data/DataReader';
 import Image from 'next/image';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
-import RemixIcon from '@/components/RemixIcon';
+import SVG from 'react-inlinesvg';
 
 interface Props {
     project: ProjectType;
@@ -58,14 +58,16 @@ const Project = ({ project, isVisible }: Props) => {
                         {project.tech
                             .filter((tech) => !!data.technologies[tech])
                             .map((tech) => (
-                                <RemixIcon
+                                <SVG
                                     key={tech}
                                     className="inline-block rounded-sm p-1"
-                                    name={data.technologies[tech].icon}
-                                    size={28}
-                                    title={tech}
-                                    style={{ backgroundColor: data.technologies[tech].color }}
-                                    // size={28}
+                                    src={data.technologies[tech].icon}
+                                    width={28}
+                                    height={28}
+                                    style={{
+                                        backgroundColor: data.technologies[tech].backgroundColor,
+                                        fill: data.technologies[tech].color,
+                                    }}
                                 />
                             ))}
                     </div>
