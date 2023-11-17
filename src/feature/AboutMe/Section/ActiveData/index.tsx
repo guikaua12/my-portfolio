@@ -24,7 +24,7 @@ const AboutMeActiveData = () => {
             </div>
             <div className="hidden basis-1/2 flex-col border-r lg:flex">
                 <div className="flex w-full max-w-max items-center justify-between gap-16 border-r bg-blue-2 px-4 py-2.5">
-                    <span className="">{activeData.section.title}</span>
+                    <span className="">{`${activeData.sectionInfo.title}/${activeData.infoFile.name}.txt`}</span>
                     <button>
                         <RiCloseFill size={20} />
                     </button>
