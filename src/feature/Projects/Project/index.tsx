@@ -13,32 +13,26 @@ interface Props {
 const Project = ({ project, isVisible }: Props) => {
     const ref = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        if (ref.current) {
-            if (!isVisible) {
-                const event = () => {
-                    if (ref.current) {
-                        ref.current.style.position = 'absolute';
-                        ref.current.style.top = '-999px';
-                        ref.current.removeEventListener('transitionend', event);
-                    }
-                };
-                ref.current.addEventListener('transitionend', event);
-            } else {
-                ref.current.style.position = 'static';
-                ref.current.style.top = '0';
-            }
-        }
-    }, [isVisible]);
+    // useEffect(() => {
+    //     if (ref.current) {
+    //         if (!isVisible) {
+    //             console.log('not visible #' + project.id);
+    //             const event = () => {
+    //                 if (ref.current) {
+    //                     ref.current.style.position = 'absolute';
+    //                     ref.current.style.top = '-999px';
+    //                 }
+    //             };
+    //             ref.current.addEventListener('transitionend', event);
+    //         } else {
+    //             ref.current.style.position = 'static';
+    //             ref.current.style.top = '0';
+    //         }
+    //     }
+    // }, [isVisible]);
 
     return (
-        <div
-            ref={ref}
-            className={twMerge(
-                'max-h-0 overflow-hidden transition-[max-height] duration-1000',
-                isVisible && 'max-h-[500px]'
-            )}
-        >
+        <div ref={ref} className={twMerge('hidden overflow-hidden', isVisible && 'block')}>
             <h1 className="mb-4 font-bold text-secondary-indigo">
                 Project {project.id} <span className="font-medium text-blue-4"> / {project.title}</span>
             </h1>
