@@ -32,6 +32,7 @@ export type Technology = {
     name: string;
     icon: keyof typeof remixIcons;
     color: string;
+    backgroundColor: string;
 };
 
 export type Project = {

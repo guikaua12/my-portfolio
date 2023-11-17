@@ -5,6 +5,32 @@
   "about": {
     "sections": [
       {
+        "title": "personal-info",
+        "icon": "RiUser4Fill",
+        "info": [
+          {
+            "title": "bio",
+            "description": "Info about me",
+            "files": [
+              {
+                "name": "index",
+                "description": "Hi, my name is Guilherme Kauã, i'm a 20-year-old technology enthusiast and fullstack developer. I love creating beautiful and functional websites and applications, using a variety of languages and frameworks. Some of the skills that I have are HTML, CSS, JS, TS, React, Next, Tailwind, SQL, MongoDB, Postgres, Express, and Node.<br><br>I enjoy learning new things and challenging myself with different projects. I am always looking for opportunities to improve my knowledge and experience in web development. I am also passionate about sharing my work and helping others in the tech community."
+              }
+            ]
+          },
+          {
+            "title": "education",
+            "description": "Info about my education",
+            "files": [
+              {
+                "name": "university",
+                "description": "I am a student at UNOPAR (Universidade Norte do Paraná), one of the largest universities in Brazil. I am currently pursuing a degree in System Analysis and Development, which is a field that combines computer science, engineering, and business.<br><br>System Analysis and Development is a course that teaches how to plan, design, implement, and maintain software systems that meet the needs of users and organizations. It covers topics such as programming languages, databases, web development, software engineering, project management.<br><br>I started my course in the second semester of 2022, and I expect to graduate in the first semester of 2024."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "title": "professional-info",
         "icon": "RiTerminalBoxFill",
         "info": [
@@ -24,57 +50,7 @@
             "files": [
               {
                 "name": "index",
-                "description": "As a Fullstack developer, I have a strong background in web development, both frontend and backend. I use Typescript on almost all my projects, as it helps me write clean and maintainable code.<br><br>Frontend skills:<br>- HTML, CSS, JS, TS<br>- React<br>- Next<br>- Tailwind<br><br>Backend skills:<br>- Node.js<br>- Express.js<br>- I also know clean-code, clean architecture, SOLID, some conventions, etc..."
-              }
-            ]
-          },
-          {
-            "title": "soft-skills",
-            "description": "<br>I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "files": [
-              {
-                "name": "index",
-                "description": "Some text"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "personal-info",
-        "icon": "RiUser4Fill",
-        "info": [
-          {
-            "title": "bio",
-            "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum.",
-            "files": [
-              {
-                "name": "index",
-                "description": "Some text"
-              }
-            ]
-          },
-          {
-            "title": "interests",
-            "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "files": [
-              {
-                "name": "index",
-                "description": "Some text"
-              }
-            ]
-          },
-          {
-            "title": "education",
-            "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "files": [
-              {
-                "name": "high-school",
-                "description": "I have been in 'Las viñas'..."
-              },
-              {
-                "name": "university",
-                "description": "The university..."
+                "description": "As a Fullstack developer, I have a strong background in web development, both frontend and backend. I use Typescript on almost all my projects, as it helps me write clean and maintainable code.<br><br>Frontend skills:<br>- HTML, CSS, JS, TS<br>- React<br>- Next<br>- Tailwind<br><br>Backend skills:<br>- Node.js<br>- Express.js<br>- I also know clean-code, clean architecture, SOLID, and some conventions"
               }
             ]
           }
@@ -85,22 +61,12 @@
         "icon": "RiGamepadFill",
         "info": [
           {
-            "title": "sports",
-            "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "files": [
-              {
-                "name": "index",
-                "description": "Some text"
-              }
-            ]
-          },
-          {
             "title": "favorite-games",
-            "description": "<br>I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "description": "Info about my favorite games",
             "files": [
               {
                 "name": "index",
-                "description": "Some text"
+                "description": "I play a lot CS:GO (now CS2) on almost all my free time. I also like to play Fortnite, and some other games."
               }
             ]
           }
@@ -156,83 +122,90 @@
   "technologies": {
     "React": {
       "name": "React",
-      "icon": "RiReactjsLine",
-      "color": "#86E1F9"
+      "icon": "icons/react.svg",
+      "backgroundColor": "#86E1F9",
+      "color": "#FFF"
     },
     "HTML": {
       "name": "HTML",
-      "icon": "RiHtml5Fill",
-      "color": "#e34c26"
+      "icon": "icons/html5-fill.svg",
+      "backgroundColor": "#e34c26",
+      "color": "#FFF"
     },
     "CSS": {
       "name": "CSS",
-      "icon": "RiCss3Fill",
-      "color": "#264de4"
+      "icon": "icons/css3-fill.svg",
+      "backgroundColor": "#264de4",
+      "color": "#FFF"
+    },
+    "Tailwind": {
+      "name": "Tailwind",
+      "icon": "icons/tailwindcss.svg",
+      "backgroundColor": "#05B6D4",
+      "color": "#FFF"
+    },
+    "NextJS": {
+      "name": "NextJS",
+      "icon": "icons/nextdotjs.svg",
+      "backgroundColor": "#080808",
+      "color": "#FFF"
+    },
+    "NodeJS": {
+      "name": "NodeJS",
+      "icon": "icons/nodedotjs.svg",
+      "backgroundColor": "#339933",
+      "color": "#FFF"
+    },
+    "Javascript": {
+      "name": "Javascript",
+      "icon": "icons/javascript.svg",
+      "backgroundColor": "#F7DF1E",
+      "color": "#000"
+    },
+    "Typescript": {
+      "name": "Typescript",
+      "icon": "icons/typescript.svg",
+      "backgroundColor": "#3178C6",
+      "color": "#FFF"
+    },
+    "Express": {
+      "name": "Express",
+      "icon": "icons/express.svg",
+      "backgroundColor": "#404D59",
+      "color": "#FFF"
+    },
+    "PostgreSQL": {
+      "name": "PostgreSQL",
+      "icon": "icons/postgresql.svg",
+      "backgroundColor": "#4169E1",
+      "color": "#FFF"
     }
   },
   "projects": {
     "1": {
       "id": "1",
-      "title": "_ui-animations",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/Project_1.png",
+      "title": "_trips",
+      "description": "A trips website made with Next and Tailwind.",
+      "img": "/images/trips-thumb.png",
       "tech": [
-        "Flutter"
+        "NextJS",
+        "Tailwind",
+        "Typescript"
       ],
-      "url": "https://github.com/"
+      "url": "https://github.com/guikaua12/trips"
     },
     "2": {
       "id": "2",
-      "title": "_ai-resources",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/Project_1.png",
+      "title": "_trips-api",
+      "description": "A REST API for the trips website made with Express and Postgres.",
+      "img": "/images/trips_api_thumb2.png",
       "tech": [
-        "CSS"
+        "NodeJS",
+        "Express",
+        "PostgreSQL",
+        "Typescript"
       ],
-      "url": "https://github.com/"
-    },
-    "3": {
-      "id": "3",
-      "title": "_worldmap",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/Project_1.png",
-      "tech": [
-        "HTML",
-        "CSS"
-      ],
-      "url": "https://github.com/"
-    },
-    "4": {
-      "id": "4",
-      "title": "_ui-animations",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/Project_1.png",
-      "tech": [
-        "React"
-      ],
-      "url": "https://github.com/"
-    },
-    "5": {
-      "id": "5",
-      "title": "_tetris-game",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/Project_1.png",
-      "tech": [
-        "React"
-      ],
-      "url": "https://github.com/"
-    },
-    "6": {
-      "id": "6",
-      "title": "_ethereum",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
-      "img": "/images/Project_1.png",
-      "tech": [
-        "HTML",
-        "CSS",
-        "React"
-      ],
-      "url": "https://github.com/"
+      "url": "https://github.com/guikaua12/trips-api"
     }
   }
 }
