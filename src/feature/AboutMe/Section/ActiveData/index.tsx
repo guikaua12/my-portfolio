@@ -62,35 +62,36 @@ const AboutMeActiveData = () => {
                     </button>
                 </div>
 
-                <div className="flex flex-1 overflow-auto border-t">
-                    {/* line numbers */}
-                    <div className="ml-9 py-4">
-                        {lines.map((line) => (
-                            <div key={line} className={twMerge(line < 10 && 'ml-2.5')}>
-                                {line}
-                            </div>
-                        ))}
-                    </div>
+                <div className="flex overflow-hidden border-t">
+                    <div className="active-data--editor flex flex-1 overflow-auto">
+                        {/* line numbers */}
+                        <div className="ml-9 py-4">
+                            {lines.map((line) => (
+                                <div key={line} className={twMerge(line < 10 && 'ml-2.5')}>
+                                    {line}
+                                </div>
+                            ))}
+                        </div>
 
-                    {/* line comments */}
-                    <div className="ml-9 py-4">
-                        {lines.map((line) => (
-                            <div key={line} className={twMerge(line > 1 && 'ml-2.5')}>
-                                {getLineCommentString(line)}
-                            </div>
-                        ))}
-                    </div>
+                        {/* line comments */}
+                        <div className="ml-9 py-4">
+                            {lines.map((line) => (
+                                <div key={line} className={twMerge(line > 1 && 'ml-2.5')}>
+                                    {getLineCommentString(line)}
+                                </div>
+                            ))}
+                        </div>
 
-                    {/* file description */}
-                    <div className="file-description--container flex-1 overflow-scroll py-4">
-                        <p
-                            className="file-description--content"
-                            dangerouslySetInnerHTML={{ __html: activeData.infoFile.description }}
-                        ></p>
+                        {/* file description */}
+                        <div className="file-description--container flex-1 py-4">
+                            <p
+                                className="file-description--content"
+                                dangerouslySetInnerHTML={{ __html: activeData.infoFile.description }}
+                            ></p>
+                        </div>
                     </div>
-
                     {/* scroll bar*/}
-                    <ScrollBar element=".active-info--content" />
+                    <ScrollBar element=".active-data--editor" />
                 </div>
             </div>
         </>

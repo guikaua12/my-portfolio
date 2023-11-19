@@ -1,8 +1,8 @@
-.file-description--container::-webkit-scrollbar {
+.active-data--editor::-webkit-scrollbar {
     display: none;
 }
 
-.file-description--container {
+.active-data--editor {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
