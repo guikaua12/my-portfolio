@@ -26,8 +26,8 @@ export interface Gist {
     };
 }
 
-export async function getAll(username: string): Promise<Gist[]> {
-    const res = await axios.get(`https://api.github.com/users/${username}/gists`);
+export async function getAll({ username, per_page = 1000 }: { username: string; per_page?: number }): Promise<Gist[]> {
+    const res = await axios.get(`https://api.github.com/users/${username}/gists?per_page=${per_page}`);
     const data = res.data;
     handleDates(data);
 

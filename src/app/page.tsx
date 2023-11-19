@@ -1,6 +1,8 @@
+import React from 'react';
 import { data } from '@/data/DataReader';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import HomeGistsCarousel from '@/feature/Home/GistsCarousel';
 
 export default function Home() {
     const gists = Array.from({ length: 5 }).map((_, i) => i);
@@ -32,31 +34,7 @@ export default function Home() {
                         </SyntaxHighlighter>
                     </div>
                 </div>
-                <div className="z-10 -mt-[7.75rem] hidden max-h-[calc(100vh-17rem)] flex-col gap-4 overflow-hidden lg:flex">
-                    {gists.map((_) => (
-                        <SyntaxHighlighter
-                            key={_}
-                            language="javascript"
-                            style={atomOneDark}
-                            customStyle={{
-                                backgroundColor: '#011221',
-                                padding: '1.5rem',
-                                borderRadius: '1rem',
-                                flexShrink: '0',
-                                flexGrow: '0',
-                            }}
-                            wrapLongLines
-                        >
-                            {'function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n' +
-                                '  const value: T = parseModel(chunk._response, chunk._value);\n' +
-                                '  const initializedChunk: InitializedChunk<T> = (chunk: any);\n' +
-                                '  initializedChunk._status = INITIALIZED;\n' +
-                                '  initializedChunk._value = value;\n' +
-                                '  return value;\n' +
-                                '}'}
-                        </SyntaxHighlighter>
-                    ))}
-                </div>
+                <HomeGistsCarousel />
             </div>
 
             {/*gradient blur effect*/}

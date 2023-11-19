@@ -1,0 +1,23 @@
+.gists-carousel pre {
+    background-color: #011221;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 610px;
+    max-height: 220px;
+    overflow: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gists-carousel pre::-webkit-scrollbar {
+    display: none;
+}
+
+.gists-carousel pre {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.gists-carousel pre .up {
+}
