@@ -9,7 +9,7 @@ import { RiErrorWarningFill, RiLoader2Fill, RiLoopLeftFill } from 'react-icons/r
 import ScrollBar from '../../../components/ScrollBar';
 
 const Gists = () => {
-    const query = useQuery('gists', () => getAll(data.contacts.social.github.user), {
+    const query = useQuery('gists', () => getAll({ username: data.contacts.social.github.user }), {
         staleTime: 1000 * 60 * 5,
     });
 
