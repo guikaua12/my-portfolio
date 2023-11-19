@@ -44,17 +44,23 @@ const AboutMeActiveData = () => {
     return (
         <>
             <div className="mt-9 px-7 lg:mt-0 lg:hidden lg:border-r">
+                {/* file name mobile */}
                 <div>
                     <span className="text-white">{`// ${activeData.section.title} `}</span>
                     <span>/ {activeData.sectionInfo.title}</span>
                 </div>
 
+                {/* file description mobile */}
                 <p className="mt-4" dangerouslySetInnerHTML={{ __html: activeData.infoFile.description }}></p>
             </div>
+
+            {/* current section dropdown */}
             <div className="mt-9 hidden basis-[330px] lg:mt-0 lg:block lg:border-r">
                 <AboutMeSection section={activeData.section} />
             </div>
+
             <div className="hidden basis-1/2 flex-col border-r lg:flex">
+                {/* file name */}
                 <div className="flex w-full max-w-max items-center justify-between gap-16 border-r bg-blue-2 px-4 py-2.5">
                     <span className="">{`${activeData.sectionInfo.title}/${activeData.infoFile.name}.txt`}</span>
                     <button>
@@ -62,6 +68,7 @@ const AboutMeActiveData = () => {
                     </button>
                 </div>
 
+                {/* editor wrapper */}
                 <div className="flex overflow-hidden border-t">
                     <div className="active-data--editor flex flex-1 overflow-auto">
                         {/* line numbers */}
@@ -90,6 +97,7 @@ const AboutMeActiveData = () => {
                             ></p>
                         </div>
                     </div>
+
                     {/* scroll bar*/}
                     <ScrollBar element=".active-data--editor" />
                 </div>
