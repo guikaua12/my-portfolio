@@ -3,12 +3,14 @@ import React, { ComponentProps } from 'react';
 import { AboutSectionInfoFile } from '@/data/DataReader';
 import MIcon from '@/components/MIcon';
 import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';
+import { twMerge } from 'tailwind-merge';
 
 interface Props extends ComponentProps<'div'> {
     file: AboutSectionInfoFile;
+    current: boolean;
 }
 
-const AboutMeSectionInfoFile = ({ file, ...rest }: Props) => {
+const AboutMeSectionInfoFile = ({ file, current, ...rest }: Props) => {
     const { setActiveData } = useActiveData();
     const handleFileClick = () => {
         setActiveData({
@@ -25,7 +27,7 @@ const AboutMeSectionInfoFile = ({ file, ...rest }: Props) => {
             {...rest}
         >
             <MIcon />
-            {file.name}
+            <span className={twMerge('hover:text-white', current && 'text-white')}>{file.name}</span>
         </div>
     );
 };
