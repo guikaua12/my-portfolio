@@ -43,7 +43,9 @@ const HomeGistsCarouselA = () => {
         <div className="gists-carousel z-10 -mt-[7.75rem] hidden max-h-[calc(100vh-17rem)] flex-col gap-4 overflow-hidden lg:flex">
             {gistsQuery.isSuccess &&
                 gistsQuery.data.map((gist, index) => (
-                    <Gist key={gist.id} data-index={index + 1} gist={gist} children=""></Gist>
+                    <Gist key={gist.id} data-index={index + 1} gist={gist}>
+                        _
+                    </Gist>
                 ))}
         </div>
     );
