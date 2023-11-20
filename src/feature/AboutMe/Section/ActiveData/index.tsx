@@ -71,7 +71,7 @@ const AboutMeActiveData = () => {
                 </div>
 
                 {/* editor wrapper */}
-                <div className="flex overflow-hidden border-t">
+                <div className="flex flex-grow overflow-hidden border-t">
                     <div className="active-data--editor flex flex-1 overflow-auto">
                         {/* line numbers */}
                         <div className="ml-9 py-4">
