@@ -34,7 +34,7 @@ const HomeGistsCarousel = () => {
     );
 };
 
-const HomeGistsCarousel = () => {
+const HomeGistsCarouselA = () => {
     const gistsQuery = useQuery('gists', () => getAll({ username: data.contacts.social.github.user, per_page: 5 }), {
         staleTime: 1000 * 60 * 5,
     });
