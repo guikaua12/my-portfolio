@@ -10,6 +10,10 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.gists-carousel pre[data-index="1"], pre[data-index="3"] {
+    opacity: 0.5;
+}
+
 .gists-carousel pre::-webkit-scrollbar {
     display: none;
 }
