@@ -9,7 +9,7 @@ const MobileHeaderMenu = () => {
         <nav className="flex-1 bg-blue-2">
             <ul className="flex flex-col text-white" onClick={closeMenu}>
                 <li>
-                    <Link href="#" className="inline-block w-full border-b p-4">
+                    <Link href="/" className="inline-block w-full border-b p-4">
                         _hello
                     </Link>
                 </li>
