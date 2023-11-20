@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Fira_Code } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import Header from '@/feature/Header';
 import React from 'react';
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <div className="flex min-h-[calc(100vh-2rem)] flex-col rounded-lg border bg-blue-2 lg:mx-16 lg:h-[calc(100vh-8rem)] lg:min-h-max lg:flex-grow lg:overflow-hidden">
                         <Header />
                         <WithMobileHeaderMenu>{children}</WithMobileHeaderMenu>
+                        <Analytics />
                         <Footer />
                     </div>
                 </body>
