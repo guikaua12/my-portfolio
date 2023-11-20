@@ -138,8 +138,8 @@
       "backgroundColor": "#264de4",
       "color": "#FFF"
     },
-    "Tailwind": {
-      "name": "Tailwind",
+    "Tailwind CSS": {
+      "name": "Tailwind CSS",
       "icon": "icons/tailwindcss.svg",
       "backgroundColor": "#05B6D4",
       "color": "#FFF"
@@ -189,7 +189,7 @@
       "img": "/images/trips-thumb.png",
       "tech": [
         "NextJS",
-        "Tailwind",
+        "Tailwind CSS",
         "Typescript"
       ],
       "url": "https://github.com/guikaua12/trips"
