@@ -4,6 +4,9 @@ const config: Config = {
     content: ['./src/**/**/*.{js,ts,jsx,tsx,mdx}'],
     theme: {
         extend: {
+            transitionDuration: {
+                '2000': '2000ms',
+            },
             colors: {
                 'blue-1': '#010C15',
                 'blue-2': '#011627',
