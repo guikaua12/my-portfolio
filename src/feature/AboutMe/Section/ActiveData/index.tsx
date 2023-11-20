@@ -19,7 +19,7 @@ const AboutMeActiveData = () => {
         const style = window.getComputedStyle(domElement);
         const lineHeight = parseInt(style.lineHeight);
         const maxHeight = domElement.offsetHeight;
-        const newLines = Array.from({ length: Math.floor(maxHeight / lineHeight) + 1 }, (_, i) => i + 1);
+        const newLines = Array.from({ length: Math.ceil(maxHeight / lineHeight) + 1 }, (_, i) => i + 1);
 
         if (lines.length === newLines.length) return;
 
