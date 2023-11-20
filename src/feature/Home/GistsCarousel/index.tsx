@@ -8,8 +8,8 @@ import { getAll } from '@/feature/AboutMe/Gists/services/GistService';
 import { data } from '@/data/DataReader';
 import Gist from '@/feature/Home/GistsCarousel/Gist';
 
-const HomeGistsCarouselFake = () => {
-    const gists = Array.from({ length: 5 }).map((_, i) => i + 1);
+const HomeGistsCarousel = () => {
+    const gists = Array.from({ length: 3 }, (_, i) => i + 1);
 
     return (
         <div className="gists-carousel z-10 -mt-[7.75rem] hidden max-h-[calc(100vh-17rem)] flex-col gap-4 overflow-hidden lg:flex">
