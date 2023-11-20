@@ -21,8 +21,10 @@ const AboutMeActiveData = () => {
         const maxHeight = domElement.offsetHeight;
         const newLines = Array.from({ length: Math.floor(maxHeight / lineHeight) + 1 }, (_, i) => i + 1);
 
+        if (lines.length === newLines.length) return;
+
         setLines(newLines);
-    }, []);
+    }, [lines]);
 
     useEffect(() => {
         updateLines();
@@ -33,7 +35,7 @@ const AboutMeActiveData = () => {
             window.removeEventListener('resize', updateLines);
             window.removeEventListener('click', updateLines);
         };
-    }, []);
+    }, [updateLines]);
 
     const getLineCommentString = (line: number) => {
         if (line === 1) return '/**';
