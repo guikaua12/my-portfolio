@@ -206,6 +206,18 @@
         "Typescript"
       ],
       "url": "https://github.com/guikaua12/trips-api"
+    },
+    "3": {
+      "id": "3",
+      "title": "_my-portfolio",
+      "description": "A portfolio website made using Next and Tailwind",
+      "img": "/images/my-portfolio-thumb.png",
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Tailwind CSS"
+      ],
+      "url": "https://github.com/guikaua12/my-portfolio"
     }
   }
 }
