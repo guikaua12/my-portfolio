@@ -241,6 +241,17 @@
         "Tailwind CSS"
       ],
       "url": "https://github.com/guikaua12/my-portfolio"
+    },
+    "4": {
+      "id": "4",
+      "title": "_apx-plugin",
+      "description": "ApxPlugin is a library for minecraft server plugin development. I built it inspired on Spring Framework, i used Hibernate as ORM, it uses proxy to handle Hibernate transactions on a single thread, and it has a lot of features that make plugin development easier.",
+      "img": "https://i.imgur.com/FRnbAVM.png",
+      "tech": [
+        "Java",
+        "Hibernate"
+      ],
+      "url": "https://github.com/guikaua12/ApxPlugin"
     }
   }
 }
