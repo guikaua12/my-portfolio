@@ -120,6 +120,18 @@
     "2": "694c1f32332788a2ac7f37b09e5aa40e"
   },
   "technologies": {
+    "Java": {
+      "name": "Java",
+      "icon": "icons/java.svg",
+      "backgroundColor": "#FFF",
+      "color": "#E1A914"
+    },
+    "Hibernate": {
+      "name": "Hibernate",
+      "icon": "icons/hibernate.svg",
+      "backgroundColor": "#FFF",
+      "color": "#59666C"
+    },
     "React": {
       "name": "React",
       "icon": "icons/react.svg",
@@ -184,6 +196,17 @@
   "projects": {
     "1": {
       "id": "1",
+      "title": "_apx-plugin",
+      "description": "ApxPlugin is a library for minecraft server plugin development. I built it inspired on Spring Framework, i used Hibernate as ORM, it uses proxy to handle Hibernate transactions on a single thread, and it has a lot of features that make plugin development easier.",
+      "img": "https://i.imgur.com/FRnbAVM.png",
+      "tech": [
+        "Java",
+        "Hibernate"
+      ],
+      "url": "https://github.com/guikaua12/ApxPlugin"
+    },
+    "2": {
+      "id": "2",
       "title": "_trips",
       "description": "A trips website made with Next and Tailwind.",
       "img": "/images/trips-thumb.png",
@@ -194,8 +217,8 @@
       ],
       "url": "https://github.com/guikaua12/trips"
     },
-    "2": {
-      "id": "2",
+    "3": {
+      "id": "3",
       "title": "_trips-api",
       "description": "A REST API for the trips website made with Express and Postgres.",
       "img": "/images/trips_api_thumb2.png",
@@ -207,8 +230,8 @@
       ],
       "url": "https://github.com/guikaua12/trips-api"
     },
-    "3": {
-      "id": "3",
+    "4": {
+      "id": "4",
       "title": "_my-portfolio",
       "description": "A portfolio website made using Next and Tailwind",
       "img": "/images/my-portfolio-thumb.png",
