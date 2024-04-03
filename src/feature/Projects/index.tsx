@@ -11,8 +11,6 @@ export type FilteredTechs = {
     [key: string]: Technology;
 };
 
-export type FilteredProjects = ProjectType[];
-
 const getFilteredTechsString = (filteredTechs: FilteredTechs): string => {
     const totalTechs = Object.keys(data.technologies).length;
 
@@ -25,8 +23,7 @@ const getFilteredTechsString = (filteredTechs: FilteredTechs): string => {
     return filteredTechsArray.map((tech) => tech.name).join('; ');
 };
 
-const getFilteredProjects = (filteredTechs: FilteredTechs): FilteredProjects => {
-    const projectsArray = Object.values(data.projects);
+const getFilteredProjects = (filteredTechs: FilteredTechs): ProjectType[] => {
     const totalTechs = Object.keys(data.technologies).length;
     const totalFilteredTechs = Object.keys(filteredTechs).length;
 
@@ -34,7 +31,7 @@ const getFilteredProjects = (filteredTechs: FilteredTechs): FilteredProjects => 
         return data.projects;
     }
 
-    return projectsArray.reduce((acc, project) => {
+    return data.projects.reduce((acc, project) => {
         const projectTechs = project.tech;
 
         const hasAllFilteredTechs = projectTechs.some((projectTech) => {
@@ -42,14 +39,11 @@ const getFilteredProjects = (filteredTechs: FilteredTechs): FilteredProjects => 
         });
 
         if (hasAllFilteredTechs) {
-            return {
-                ...acc,
-                [project.id]: project,
-            };
+            return [...acc, project];
         }
 
         return acc;
-    }, {} as FilteredProjects);
+    }, [] as ProjectType[]);
 };
 
 const Projects = () => {
@@ -73,6 +67,7 @@ const Projects = () => {
     );
 
     const filteredProjects = getFilteredProjects(filteredTechs);
+    console.log(filteredProjects);
 
     return (
         <>
