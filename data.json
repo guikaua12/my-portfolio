@@ -193,20 +193,41 @@
       "color": "#FFF"
     }
   },
-  "projects": {
-     "1": {
-      "id": "1",
-      "title": "_trips",
-      "description": "A trips website made with Next and Tailwind.",
-      "img": "/images/trips-thumb.png",
+  "projects": [
+    {
+      "id": "5",
+      "title": "_design-patterns",
+      "description": "This is a project that i implement some of the most used design patterns, such as Observer, Singleton, Builder, etc... using Java.",
+      "img": "https://i.imgur.com/eXcxRQL.png",
+      "tech": [
+        "Java"
+      ],
+      "url": "https://github.com/guikaua12/design-patterns"
+    },
+    {
+      "id": "4",
+      "title": "_apx-plugin",
+      "description": "ApxPlugin is a library for minecraft server plugin development. I built it inspired on Spring Framework, i used Hibernate as ORM, it uses proxy to handle Hibernate transactions on a single thread, and it has a lot of features that make plugin development easier.",
+      "img": "https://i.imgur.com/FRnbAVM.png",
+      "tech": [
+        "Java",
+        "Hibernate"
+      ],
+      "url": "https://github.com/guikaua12/ApxPlugin"
+    },
+    {
+      "id": "3",
+      "title": "_my-portfolio",
+      "description": "A portfolio website made using Next and Tailwind",
+      "img": "/images/my-portfolio-thumb.png",
       "tech": [
         "NextJS",
-        "Tailwind CSS",
-        "Typescript"
+        "Typescript",
+        "Tailwind CSS"
       ],
-      "url": "https://github.com/guikaua12/trips"
+      "url": "https://github.com/guikaua12/my-portfolio"
     },
-    "2": {
+    {
       "id": "2",
       "title": "_trips-api",
       "description": "A REST API for the trips website made with Express and Postgres.",
@@ -219,38 +240,17 @@
       ],
       "url": "https://github.com/guikaua12/trips-api"
     },
-    "3": {
-      "id": "3",
-      "title": "_my-portfolio",
-      "description": "A portfolio website made using Next and Tailwind",
-      "img": "/images/my-portfolio-thumb.png",
+    {
+      "id": "1",
+      "title": "_trips",
+      "description": "A trips website made with Next and Tailwind.",
+      "img": "/images/trips-thumb.png",
       "tech": [
         "NextJS",
-        "Typescript",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "Typescript"
       ],
-      "url": "https://github.com/guikaua12/my-portfolio"
-    },
-    "4": {
-      "id": "4",
-      "title": "_apx-plugin",
-      "description": "ApxPlugin is a library for minecraft server plugin development. I built it inspired on Spring Framework, i used Hibernate as ORM, it uses proxy to handle Hibernate transactions on a single thread, and it has a lot of features that make plugin development easier.",
-      "img": "https://i.imgur.com/FRnbAVM.png",
-      "tech": [
-        "Java",
-        "Hibernate"
-      ],
-      "url": "https://github.com/guikaua12/ApxPlugin"
-    },
-    "5": {
-      "id": "5",
-      "title": "_design-patterns",
-      "description": "This is a project that i implement some of the most used design patterns, such as Observer, Singleton, Builder, etc... using Java.",
-      "img": "https://i.imgur.com/eXcxRQL.png",
-      "tech": [
-        "Java"
-      ],
-      "url": "https://github.com/guikaua12/design-patterns"
+      "url": "https://github.com/guikaua12/trips"
     }
-  }
+  ]
 }

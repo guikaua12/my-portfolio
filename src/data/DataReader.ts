@@ -75,9 +75,7 @@ export type Data = {
     technologies: {
         [key: string]: Technology;
     };
-    projects: {
-        [key: string]: Project;
-    };
+    projects: Project[];
 };
 
 // @ts-ignore TS2322
