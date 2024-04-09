@@ -126,6 +126,12 @@
       "backgroundColor": "#FFF",
       "color": "#E1A914"
     },
+    "Spring": {
+      "name": "Spring",
+      "icon": "icons/spring.svg",
+      "backgroundColor": "#FFF",
+      "color": "#6DB33F"
+    },
     "Hibernate": {
       "name": "Hibernate",
       "icon": "icons/hibernate.svg",
@@ -194,6 +200,17 @@
     }
   },
   "projects": [
+    {
+      "id": "6",
+      "title": "_spring-example",
+      "description": "This project was my first contact with Spring Framework, with Nélio Alves's Udemy course.",
+      "img": "https://i.imgur.com/cnIfO5J.png",
+      "tech": [
+        "Java",
+        "Spring"
+      ],
+      "url": "https://github.com/guikaua12/spring-example"
+    },
     {
       "id": "5",
       "title": "_design-patterns",
