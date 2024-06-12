@@ -201,15 +201,27 @@
   },
   "projects": [
     {
+      "id": "7",
+      "title": "_music-api",
+      "description": "Esse projeto foi criado para fins de estudo, consiste em uma plataforma de músicas, onde os usúarios podem consumir e fazer upload de músicas. A ideia é usar o Cloudflare R2 (usando a API do AWS S3) pra salvar e recuperar as músicas.",
+      "img": "https://i.imgur.com/jiL45Th.png",
+      "tech": [
+        "Java",
+        "Spring"
+      ],
+      "url": "https://github.com/guikaua12/spring-example"
+    },
+    {
       "id": "6",
       "title": "_spring-example",
       "description": "This project was my first contact with Spring Framework, with Nélio Alves's Udemy course.",
       "img": "https://i.imgur.com/cnIfO5J.png",
       "tech": [
         "Java",
-        "Spring"
+        "Spring",
+        "Hibernate"
       ],
-      "url": "https://github.com/guikaua12/spring-example"
+      "url": "https://github.com/guikaua12/music-api"
     },
     {
       "id": "5",
