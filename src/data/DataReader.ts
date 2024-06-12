@@ -50,6 +50,12 @@ export type Data = {
     role: string;
     about: { sections: AboutSection[] };
     contacts: {
+        direct: {
+            title: string;
+            sources: {
+                email: string;
+            };
+        };
         social: {
             github: {
                 title: string;

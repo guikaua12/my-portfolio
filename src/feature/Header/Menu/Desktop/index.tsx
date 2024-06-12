@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { twMerge } from 'tailwind-merge';
 import { useRouter } from 'next/router';
+import { data } from '@/data/DataReader';
 
 const DesktopHeaderMenu = () => {
     const pathname = usePathname();
@@ -45,7 +46,9 @@ const DesktopHeaderMenu = () => {
                     </Link>
                 </li>
             </ul>
-            <button className="border-l lg:px-5 lg:py-4">_contact-me</button>
+            <a className="border-l lg:px-5 lg:py-4" href={`mailto: ${data.contacts.direct.sources.email}`}>
+                _contact-me
+            </a>
         </nav>
     );
 };
