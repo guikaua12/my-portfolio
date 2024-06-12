@@ -207,7 +207,8 @@
       "img": "https://i.imgur.com/jiL45Th.png",
       "tech": [
         "Java",
-        "Spring"
+        "Spring",
+        "Hibernate"
       ],
       "url": "https://github.com/guikaua12/spring-example"
     },
