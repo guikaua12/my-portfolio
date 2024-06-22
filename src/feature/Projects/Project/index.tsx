@@ -40,13 +40,19 @@ const Project = ({ project, isVisible }: Props) => {
                 {/* image */}
                 <div className="relative h-[146px] w-full border-b">
                     <Image
-                        src={project.img}
+                        src="https://i.imgur.com/B95073j.png"
                         alt="Projet image"
                         fill
                         style={{
                             objectFit: 'cover',
                         }}
                     />
+
+                    {/* image text */}
+                    <div className="relative inset-0 z-10 flex h-full items-center justify-center">
+                        <span className="relative z-10 text-2xl text-white">{project.title}</span>
+                    </div>
+
                     {/* technologies */}
                     <div className="absolute right-4 top-4 flex gap-2 text-primary-blue-charcoal">
                         {project.tech
