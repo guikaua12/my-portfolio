@@ -39,7 +39,6 @@ export type Project = {
     id: string;
     title: string;
     description: string;
-    img: string;
     tech: string[];
     url: string;
 };
@@ -248,11 +247,25 @@ const data = {
     } as { [key: string]: Technology },
     projects: [
         {
+            id: '9',
+            title: '_microservice-spring',
+            description: 'Backend simples usando arquitetura de microserviços',
+            tech: ['Java', 'Spring', 'Hibernate'],
+            url: 'https://github.com/guikaua12/microservices-spring',
+        },
+        {
+            id: '8',
+            title: '_music',
+            description:
+                'Esse projeto foi criado para fins de estudo, consiste em uma plataforma de músicas, onde os usúarios podem consumir e fazer upload de músicas.',
+            tech: ['React', 'NextJS', 'Hibernate', 'Typescript'],
+            url: 'https://github.com/guikaua12/music',
+        },
+        {
             id: '7',
             title: '_music-api',
             description:
                 'Esse projeto foi criado para fins de estudo, consiste em uma plataforma de músicas, onde os usúarios podem consumir e fazer upload de músicas. A ideia é usar o Cloudflare R2 (usando a API do AWS S3) pra salvar e recuperar as músicas.',
-            img: 'https://i.imgur.com/jiL45Th.png',
             tech: ['Java', 'Spring', 'Hibernate'],
             url: 'https://github.com/guikaua12/music-api',
         },
@@ -260,7 +273,6 @@ const data = {
             id: '6',
             title: '_spring-example',
             description: "This project was my first contact with Spring Framework, with Nélio Alves's Udemy course.",
-            img: 'https://i.imgur.com/cnIfO5J.png',
             tech: ['Java', 'Spring', 'Hibernate'],
             url: 'https://github.com/guikaua12/music-api',
         },
@@ -269,7 +281,6 @@ const data = {
             title: '_design-patterns',
             description:
                 'This is a project that i implement some of the most used design patterns, such as Observer, Singleton, Builder, etc... using Java.',
-            img: 'https://i.imgur.com/eXcxRQL.png',
             tech: ['Java'],
             url: 'https://github.com/guikaua12/design-patterns',
         },
@@ -278,7 +289,6 @@ const data = {
             title: '_apx-plugin',
             description:
                 'ApxPlugin is a library for minecraft server plugin development. I built it inspired on Spring Framework, i used Hibernate as ORM, it uses proxy to handle Hibernate transactions on a single thread, and it has a lot of features that make plugin development easier.',
-            img: 'https://i.imgur.com/FRnbAVM.png',
             tech: ['Java', 'Hibernate'],
             url: 'https://github.com/guikaua12/ApxPlugin',
         },
@@ -286,7 +296,6 @@ const data = {
             id: '3',
             title: '_my-portfolio',
             description: 'A portfolio website made using Next and Tailwind',
-            img: '/images/my-portfolio-thumb.png',
             tech: ['NextJS', 'Typescript', 'Tailwind CSS'],
             url: 'https://github.com/guikaua12/my-portfolio',
         },
@@ -294,7 +303,6 @@ const data = {
             id: '2',
             title: '_trips-api',
             description: 'A REST API for the trips website made with Express and Postgres.',
-            img: '/images/trips_api_thumb2.png',
             tech: ['NodeJS', 'Express', 'PostgreSQL', 'Typescript'],
             url: 'https://github.com/guikaua12/trips-api',
         },
@@ -302,7 +310,6 @@ const data = {
             id: '1',
             title: '_trips',
             description: 'A trips website made with Next and Tailwind.',
-            img: '/images/trips-thumb.png',
             tech: ['NextJS', 'Tailwind CSS', 'Typescript'],
             url: 'https://github.com/guikaua12/trips',
         },
