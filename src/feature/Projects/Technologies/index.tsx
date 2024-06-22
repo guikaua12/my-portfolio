@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { RiArrowDownSFill, RiArrowRightSFill, RiReactjsFill } from 'react-icons/ri';
-import { data } from '@/data/DataReader';
+import { data } from '@/data/data';
 import Technology from '@/feature/Projects/Technologies/Technology';
 import { FilteredTechs } from '@/feature/Projects';
 

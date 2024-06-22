@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { data } from '@/data/DataReader';
+import { data } from '@/data/data';
 import HeaderMobileMenuButton from './Menu/Mobile/Button';
 import Link from 'next/link';
 import { useMobileHeaderMenu } from '@/feature/Header/Menu/Mobile/hook/useMobileHeaderMenu';

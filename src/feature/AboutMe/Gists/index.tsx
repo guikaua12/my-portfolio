@@ -4,7 +4,7 @@ import './index.style.css';
 import Gist from '@/feature/AboutMe/Gists/Gist';
 import { useQuery } from 'react-query';
 import { getAll } from '@/feature/AboutMe/Gists/services/GistService';
-import { data } from '@/data/DataReader';
+import { data } from '@/data/data';
 import { RiErrorWarningFill, RiLoader2Fill, RiLoopLeftFill } from 'react-icons/ri';
 import ScrollBar from '../../../components/ScrollBar';
 

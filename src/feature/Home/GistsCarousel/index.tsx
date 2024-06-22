@@ -5,7 +5,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { useQuery } from 'react-query';
 import { getAll } from '@/feature/AboutMe/Gists/services/GistService';
-import { data } from '@/data/DataReader';
+import { data } from '@/data/data';
 import Gist from '@/feature/Home/GistsCarousel/Gist';
 
 const HomeGistsCarousel = () => {

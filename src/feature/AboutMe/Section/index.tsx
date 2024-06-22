@@ -1,6 +1,6 @@
 'use client';
 import React, { ComponentProps, useState } from 'react';
-import { AboutSection } from '@/data/DataReader';
+import { AboutSection } from '@/data/data';
 import { FaCaretRight, FaCaretDown } from 'react-icons/fa6';
 import AboutMeSectionInfo from '@/feature/AboutMe/Section/Info';
 import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';

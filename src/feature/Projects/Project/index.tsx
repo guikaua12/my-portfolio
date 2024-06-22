@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Project as ProjectType, data } from '@/data/DataReader';
+import { Project as ProjectType, data } from '@/data/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';

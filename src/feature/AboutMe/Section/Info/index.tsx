@@ -1,6 +1,6 @@
 'use client';
 import React, { ComponentProps, useState } from 'react';
-import { AboutSectionInfo } from '@/data/DataReader';
+import { AboutSectionInfo } from '@/data/data';
 import { FaChevronRight, FaChevronDown, FaFolderClosed } from 'react-icons/fa6';
 import AboutMeSectionInfoFile from '@/feature/AboutMe/Section/Info/File';
 import { twMerge } from 'tailwind-merge';

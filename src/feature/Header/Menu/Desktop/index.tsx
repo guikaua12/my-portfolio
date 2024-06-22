@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { twMerge } from 'tailwind-merge';
 import { useRouter } from 'next/router';
-import { data } from '@/data/DataReader';
+import { data } from '@/data/data';
 
 const DesktopHeaderMenu = () => {
     const pathname = usePathname();

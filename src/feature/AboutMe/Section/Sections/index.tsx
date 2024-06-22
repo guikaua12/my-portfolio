@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { AboutSection, data } from '@/data/DataReader';
+import { AboutSection, data } from '@/data/data';
 import AboutMeSection from '@/feature/AboutMe/Section';
 import RemixIcon from '@/components/RemixIcon';
 import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';

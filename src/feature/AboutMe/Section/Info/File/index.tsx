@@ -1,6 +1,6 @@
 'use client';
 import React, { ComponentProps } from 'react';
-import { AboutSectionInfoFile } from '@/data/DataReader';
+import { AboutSectionInfoFile } from '@/data/data';
 import MIcon from '@/components/MIcon';
 import { useActiveData } from '@/feature/AboutMe/Section/ActiveData/hook/useActiveData';
 import { twMerge } from 'tailwind-merge';

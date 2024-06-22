@@ -2,7 +2,7 @@
 import React, { useCallback, useState } from 'react';
 import './index.style.css';
 import Technologies from '@/feature/Projects/Technologies';
-import { data, Technology, Project as ProjectType } from '@/data/DataReader';
+import { data, Technology, Project as ProjectType } from '@/data/data';
 import Project from '@/feature/Projects/Project';
 import { RiCloseFill } from 'react-icons/ri';
 import ScrollBar from '../../components/ScrollBar';

@@ -1,6 +1,6 @@
 'use client';
 import { createContext, Dispatch, ReactNode, SetStateAction, useState } from 'react';
-import { AboutSection, AboutSectionInfo, AboutSectionInfoFile, data } from '@/data/DataReader';
+import { AboutSection, AboutSectionInfo, AboutSectionInfoFile, data } from '@/data/data';
 
 type ActiveDataType = {
     section: AboutSection;

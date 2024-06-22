@@ -1,7 +1,7 @@
 'use client';
 import React, { ChangeEventHandler, ComponentProps } from 'react';
 import Checkbox from '@/components/Checkbox';
-import { Technology } from '@/data/DataReader';
+import { Technology } from '@/data/data';
 import SVG from 'react-inlinesvg';
 
 interface Props extends ComponentProps<'div'> {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { data } from '@/data/DataReader';
+import { data } from '@/data/data';
 import Icon from '../../components/Icon';
 import Link from 'next/link';
 
