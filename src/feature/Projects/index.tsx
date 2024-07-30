@@ -2,10 +2,12 @@
 import React, { useCallback, useState } from 'react';
 import './index.style.css';
 import Technologies from '@/feature/Projects/Technologies';
-import { data, Technology, Project as ProjectType } from '@/data/data';
+import { data, Project as ProjectType, Technology } from '@/data/data';
 import Project from '@/feature/Projects/Project';
 import { RiCloseFill } from 'react-icons/ri';
 import ScrollBar from '../../components/ScrollBar';
+import { Transition } from '@headlessui/react';
+import { clsx } from 'clsx';
 
 export type FilteredTechs = {
     [key: string]: Technology;
@@ -46,6 +48,16 @@ const getFilteredProjects = (filteredTechs: FilteredTechs): ProjectType[] => {
     }, [] as ProjectType[]);
 };
 
+const isProjectFiltered = (project: ProjectType, filteredTechs: FilteredTechs): boolean => {
+    if (!Object.keys(filteredTechs).length) {
+        return true;
+    }
+
+    return project.tech.some((projectTech) => {
+        return !!filteredTechs[projectTech];
+    });
+};
+
 const Projects = () => {
     const [filteredTechs, setFilteredTechs] = useState<FilteredTechs>({} as FilteredTechs);
 
@@ -66,9 +78,6 @@ const Projects = () => {
         [setFilteredTechs]
     );
 
-    const filteredProjects = getFilteredProjects(filteredTechs);
-    console.log(filteredProjects);
-
     return (
         <>
             <Technologies onTechnologyClick={onTechnologyClick} filteredTechs={filteredTechs} defaultOpen={true} />
@@ -87,8 +96,19 @@ const Projects = () => {
                 </div>
                 <div className="flex lg:h-full lg:border-t">
                     <div className="projects mt-4 flex auto-rows-min flex-col gap-5 lg:mt-0 lg:grid lg:max-h-[70vh] lg:flex-1 lg:grid-cols-3 lg:gap-10 lg:overflow-scroll lg:p-16">
-                        {filteredProjects.map((project) => (
-                            <Project key={project.id} project={project} isVisible={true} />
+                        {data.projects.map((project) => (
+                            <Transition show={isProjectFiltered(project, filteredTechs)}>
+                                <div
+                                    className={clsx([
+                                        'transition ease-in-out',
+                                        'data-[closed]:opacity-0',
+                                        'data-[enter]:data-[closed]:-translate-y-full data-[enter]:duration-100',
+                                        'data-[leave]:data-[closed]:translate-y-full data-[leave]:duration-300',
+                                    ])}
+                                >
+                                    <Project key={project.id} project={project} />
+                                </div>
+                            </Transition>
                         ))}
                     </div>
                     <ScrollBar className="hidden lg:block" element=".projects" />
