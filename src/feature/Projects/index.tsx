@@ -97,7 +97,7 @@ const Projects = () => {
                 <div className="flex lg:h-full lg:border-t">
                     <div className="projects mt-4 flex auto-rows-min flex-col gap-5 lg:mt-0 lg:grid lg:max-h-[70vh] lg:flex-1 lg:grid-cols-3 lg:gap-10 lg:overflow-scroll lg:p-16">
                         {data.projects.map((project) => (
-                            <Transition show={isProjectFiltered(project, filteredTechs)}>
+                            <Transition key={project.id} show={isProjectFiltered(project, filteredTechs)}>
                                 <div
                                     className={clsx([
                                         'transition ease-in-out',
