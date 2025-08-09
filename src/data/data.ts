@@ -60,7 +60,10 @@ const data = {
                             {
                                 name: 'index',
                                 description:
-                                    "<br>Hi, my name is Guilherme Kauã (AKA Approximations), i'm a 20-year-old technology enthusiast and fullstack developer. I love creating beautiful and functional websites and applications, using a variety of languages and frameworks. Some of the skills that I have are HTML, CSS, JS, TS, React, Next, Tailwind, SQL, MongoDB, Postgres, Express, and Node.<br><br>I have a great experience with the Java language itself, but i just started learning the comercial side with Spring Boot, JPA, etc...<br><br>I enjoy learning new things and challenging myself with different projects. I am always looking for opportunities to improve my knowledge and experience in web development. I am also passionate about sharing my work and helping others in the tech community.",
+                                    '<br>' +
+                                    'I’m Guilherme Kauã (though most people online know me as Approximations), a 20-year-old full-stack web developer. Officially, I work across both front-end and back-end development, but I also have a genuine love for creating UI designs as a hobby. My goal is to build digital experiences that look good and perform flawlessly.<br>' +
+                                    '<br>' +
+                                    'I’m constantly learning new technologies and taking on projects that push me to grow :)',
                             },
                         ],
                     },
@@ -71,7 +74,11 @@ const data = {
                             {
                                 name: 'university',
                                 description:
-                                    '<br>I am a student at UNOPAR (Universidade Norte do Paraná), one of the largest universities in Brazil. I am currently pursuing a degree in System Analysis and Development, which is a field that combines computer science, engineering, and business.<br><br>System Analysis and Development is a course that teaches how to plan, design, implement, and maintain software systems that meet the needs of users and organizations. It covers topics such as programming languages, databases, web development, software engineering, project management.<br><br>I started my course in the second semester of 2022, and I expect to graduate in the first semester of 2024.',
+                                    '<br>Currently, I hold an Associate Degree in Systems Analysis and Development, which I completed in June 2024.<br>' +
+                                    '<br>' +
+                                    'Throughout my studies, I gained a solid foundation in the core areas of programming, database management, and system development. This degree allowed me to dive deep into the world of technology and build a strong skill set in both the theoretical and practical aspects of the field.<br>' +
+                                    '<br>' +
+                                    'As I continue to expand my knowledge, I’m excited to leverage this education in real-world projects, always striving to grow and adapt in the fast-evolving tech landscape.',
                             },
                         ],
                     },
@@ -88,7 +95,13 @@ const data = {
                             {
                                 name: 'index',
                                 description:
-                                    '<br>I am a self-taught programmer with a passion for creating interactive applications. I started coding in 2021, when I wrote some simple Python scripts to automate some tasks in the games I played. I enjoyed the challenge and the satisfaction of making things work with code, so I decided to pursue programming as a hobby and a career.<br><br>In 2022, I began developing plugins for Bukkit/Spigot servers, which are platforms for running Minecraft multiplayer servers. I learned how to use Java, the Bukkit API, and various libraries and frameworks. I also started doing commissions for other server owners, who hired me to develop plugins according to their specifications and needs. I gained valuable experience in working with clients, managing projects, and delivering quality products.<br><br>In December 2022, I expanded my skill set by studying web development, both frontend and backend. I took some online courses to learn the basics of HTML, CSS, JavaScript, and Node.js, as well as some popular tools and frameworks such as Tailwind, React, Express, and MongoDB. I applied my knowledge by building some personal projects, such as this portfolio website, and a Trips website. I also learned how to use Git, GitHub, and Vercel to manage and deploy my code.<br><br>I am always eager to learn new technologies and improve my skills. I am looking for opportunities to work on exciting and challenging projects.<br><br>**Note:** I have not stopped developing plugins for Bukkit/Spigot servers. I still enjoy working on them and I am open to new commissions. Web development is an additional skill  (will soon be the main) that I have acquired and I can also make websites for various purposes.',
+                                    '<br>I am a Full-Stack Developer with extensive experience in Java, Spring Boot, React, and Next.js. My programming journey began in 2021 when I started creating simple automation scripts for games, which sparked my passion for solving problems through code and led me to pursue programming professionally.<br>' +
+                                    '<br>' +
+                                    'In 2022, I expanded my expertise by developing custom backend solutions for Bukkit/Spigot servers, mastering Java and various frameworks. Through my freelance work at DevRoom, I successfully delivered over multiple custom Java solutions using Java, Hibernate, MySQL, etc..., while working directly with clients to gather requirements and deliver tailored solutions. This provided invaluable experience in project management, system architecture design using UML diagrams, and maintaining code quality through test automation and clean architecture practices.<br>' +
+                                    '<br>' +
+                                    'From 2023 onwards, I broadened my skill set to encompass full-stack development. At Screen Labs, I implemented a complete e-commerce frontend using React.js, Next.js, and TypeScript, translating Figma designs into responsive, accessible interfaces. My role at Hive Media further enhanced my frontend capabilities, where I developed dashboard interfaces and desktop applications with Electron, while optimizing SEO performance through sitemap and JSON-LD integration.<br>' +
+                                    '<br>' +
+                                    "Currently at OTI Software, I focus on backend development with Spring Boot, where I've established CI/CD pipelines using Jenkins, implemented comprehensive testing strategies with JUnit, Mockito, and Testcontainers, and refactored legacy codebases following SOLID principles. I also resolve production issues through log analysis and cross-functional collaboration.",
                             },
                         ],
                     },
@@ -99,7 +112,23 @@ const data = {
                             {
                                 name: 'index',
                                 description:
-                                    '<br>As a Fullstack developer, I have a strong background in web development, both frontend and backend. I use Typescript on almost all my projects, as it helps me write clean and maintainable code.<br><br>Frontend skills:<br>- HTML, CSS, JS, TS<br>- React<br>- Next<br>- Tailwind<br><br>Backend skills:<br>- Node.js<br>- Express.js<br>- I also know clean-code, clean architecture, SOLID, and some conventions',
+                                    '<br>As a Full-Stack Developer, I have extensive experience in both frontend and backend development. I leverage TypeScript across my projects to ensure type safety and maintainable code.<br>' +
+                                    '<br>' +
+                                    'Frontend skills:<br>' +
+                                    '- HTML, CSS, JavaScript, TypeScript<br>' +
+                                    '- React.js, Next.js<br>' +
+                                    '- Tailwind CSS, Electron<br>' +
+                                    '- SEO optimization (sitemap, JSON-LD)<br>' +
+                                    '- Responsive and accessible UI development<br>' +
+                                    '<br>' +
+                                    'Backend skills:<br>' +
+                                    '- Java, Spring Boot, Hibernate<br>' +
+                                    '- Node.js, Express.js<br>' +
+                                    '- RESTful API development<br>' +
+                                    '- Message queuing (RabbitMQ)<br>' +
+                                    '- Caching (Redis)<br>' +
+                                    '<br>' +
+                                    'I apply clean code principles, clean architecture patterns, and SOLID principles throughout my development process. My experience includes designing system architecture with UML, implementing comprehensive testing strategies (JUnit, Mockito, Testcontainers), and establishing CI/CD pipelines with Jenkins and Docker.',
                             },
                         ],
                     },
@@ -246,6 +275,13 @@ const data = {
         },
     } as { [key: string]: Technology },
     projects: [
+        {
+            id: '10',
+            title: '_spigot-boot',
+            description: 'Improve the way you write Spigot plugins by coding on top of IOC containers ',
+            tech: ['Java', 'Hibernate'],
+            url: 'https://github.com/guikaua12/spigot-boot',
+        },
         {
             id: '9',
             title: '_microservice-spring',
